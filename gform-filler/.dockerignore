@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.vscode/
+.git/
+.gitignore
+models/*.gguf
+responses/_generated.csv
+Dockerfile
+README.md
+DESIGN.md
