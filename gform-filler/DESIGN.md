@@ -173,7 +173,7 @@ To avoid accidentally clicking a different button like “Clear form,” the aut
 
 ### Layout
 
-- Title bar: “Google Forms Auto-Filler”
+- Title bar: `gform-filler`
 - URL input
 - Folder input + “Scan Folder” button
 - Primary fetch button
@@ -233,7 +233,7 @@ Aarav Sharma,aarav.sharma@college.edu,9876543210,...
 ### Data handling policy
 
 - User-supplied CSVs are accepted as-is after validation and column mapping.
-- Generated demo CSVs are labeled as demo/test data and are consumed through the same submission path to maintain a single operational model.
+- Generated demo CSVs are labeled as demo/test data and require an explicit offline-test confirmation before submission.
 - No personal or sensitive values are exposed in log output beyond a single matched name or row identifier.
 
 ## 11. LLM generator
@@ -290,7 +290,7 @@ After generation, the module deletes the Llama object and calls `gc.collect()` b
 - Scope of automation: only forms the user has permission to submit.
 - Demo data only: the LLM is explicitly constrained to generate test/demo CSVs and never to impersonate real people.
 - Consent and privacy: the app does not store new respondent data beyond the user-uploaded CSV.
-- Rate limiting: the browser uses natural waits and per-row isolation; the design avoids rapid repeated submissions.
+- Rate limiting: a 1.5-second default delay is applied between submissions and can be configured with `--delay` or `GFORM_SUBMIT_DELAY`.
 - No telemetry and no outbound calls beyond the target form URL and optional initial model download.
 - No bypass of authentication or scraping of private data.
 
