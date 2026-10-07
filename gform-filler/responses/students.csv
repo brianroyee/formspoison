@@ -1,2 +1,446 @@
 Name,E-MAIL ID,CONTACT NUMBER,WHATSAPP NUMBER,COLLEGE NAME,DEPARTMENT/ BRANCH/ SPECIALISATION,YEAR OF STUDY,Available Domains for Industrial Training and Internship Program,PREFERRED MONTH OF JOINING,Your Home State:,Class Representative (CR) Details (Name and Contact number),REFER YOUR FRIENDS WHO WANT TO WORK ON THE SAME PROJECT (Name & Contact number),Professor / HOD's (Name & Contact)
-Aarav Sharma,aarav.sharma@nitc.edu,9876543210,9876543210,NIT Calicut,Computer Science,1st,Robotics,October,Kerala,Ananya - 9876500001,Arjun - 9876500002,Rajesh - 9876500003
+Aarav Sharma,aarav.sharma42@gmail.com,9876543210,9876543210,IIT Delhi,Computer Science,3rd Year,Web Development,"June, July",Delhi,Rohan Verma - 9812345678,Priya Patel - 9988776655,Prof. Gupta - gupta@college.edu
+Diya Reddy,diya.reddy88@yahoo.com,8765432109,8765432109,NIT Trichy,Electronics & Communication,4th Year,VLSI Design,January,Telangana,Sneha Rao - 9988776655,None,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das15@outlook.com,7654321098,7654321098,BITS Pilani,Mechanical,2nd Year,IoT,May,West Bengal,Amit Singh - 9876501234,Kiran Kumar - 9123456789,Prof. Banerjee - banerjee@college.edu
+Ananya Iyer,ananya.iyer77@gmail.com,9123456789,9123456789,Anna University,AI & Data Science,4th Year,Machine Learning,December,Tamil Nadu,Kavya Menon - 9765432101,None,Prof. Iyer - iyer@college.edu
+Kabir Singh,kabir.singh33@hotmail.com,8899776655,8899776655,VIT Vellore,Information Technology,1st Year,Cybersecurity,June,Punjab,Arjun Nair - 9654321098,Aditya Joshi - 9876541230,Prof. Singh - singh@college.edu
+Ishaan Gupta,ishaan.gupta21@gmail.com,7788990011,7788990011,SRM University,Computer Science,3rd Year,App Development,May,Uttar Pradesh,Riya Singh - 9123456780,None,Prof. Sharma - sharma@college.edu
+Kavya Nair,kavya.nair55@yahoo.com,9900112233,9900112233,COEP Pune,Civil,4th Year,Cloud Computing,January,Kerala,Aarav Menon - 9845612378,Sneha Nair - 9845612379,Prof. Nair - nair@college.edu
+Aditya Verma,aditya.verma10@gmail.com,9811223344,9811223344,DTU Delhi,Electrical,2nd Year,Embedded Systems,July,Delhi,Vivaan Gupta - 9711223344,None,Prof. Verma - verma@college.edu
+Sneha Patel,sneha.patel66@outlook.com,8877665544,8877665544,IIIT Hyderabad,AI & Data Science,4th Year,Artificial Intelligence,December,Gujarat,Rahul Patel - 9822334455,Rohan Desai - 9822334456,Prof. Patel - patel@college.edu
+Vivaan Rao,vivaan.rao99@gmail.com,7766554433,7766554433,Jadavpur University,Mechanical,1st Year,Web Development,"June, July",West Bengal,Arjun Das - 9833445566,None,Prof. Chatterjee - chatterjee@college.edu
+Ananya Joshi,ananya.joshi14@yahoo.com,9654321098,9654321098,Manipal Institute of Technology,Information Technology,3rd Year,Data Science,May,Karnataka,Riya Mehta - 9744556677,Kiran Shah - 9744556678,Prof. Joshi - joshi@college.edu
+Rahul Kumar,rahul.kumar82@gmail.com,9543210987,9543210987,Amity University,Electronics & Communication,4th Year,IoT,January,Uttar Pradesh,Pooja Singh - 9655667788,None,Prof. Kumar - kumar@college.edu
+Priya Desai,priya.desai27@hotmail.com,9432109876,9432109876,Thapar Institute,Computer Science,2nd Year,Machine Learning,June,Punjab,Amit Yadav - 9566778899,Sumit Yadav - 9566778890,Prof. Desai - desai@college.edu
+Rohan Bhat,rohan.bhat51@gmail.com,9321098765,9321098765,IIT Bombay,Chemical,4th Year,Cybersecurity,December,Maharashtra,Sneha Rao - 9477889900,None,Prof. Bhat - bhat@college.edu
+Kiran Reddy,kiran.reddy39@yahoo.com,9210987654,9210987654,NIT Trichy,Aerospace,3rd Year,Cloud Computing,July,Andhra Pradesh,Diya Reddy - 9388990011,Vivaan Reddy - 9388990012,Prof. Reddy - reddy@college.edu
+Aarav Singh,aarav.singh74@gmail.com,9109876543,9109876543,VIT Vellore,Civil,1st Year,Web Development,May,Rajasthan,Ananya Singh - 9299001122,None,Prof. Singh - singh@college.edu
+Ira Menon,ira.menon18@outlook.com,9098765432,9098765432,Anna University,Electrical,4th Year,Embedded Systems,January,Kerala,Rohan Nair - 9188992233,Kavya Nair - 9188992234,Prof. Menon - menon@college.edu
+Arjun Gupta,arjun.gupta63@gmail.com,8987654321,8987654321,DTU Delhi,Computer Science,2nd Year,Artificial Intelligence,June,Delhi,Aarav Verma - 9077883344,None,Prof. Gupta - gupta@college.edu
+Myra Shah,myra.shah95@yahoo.com,8876543210,8876543210,BITS Pilani,AI & Data Science,3rd Year,Data Science,December,Gujarat,Riya Patel - 8966774455,Rahul Shah - 8966774456,Prof. Shah - shah@college.edu
+Sai Kumar,sai.kumar41@gmail.com,8765432109,8765432109,SRM University,Mechanical,4th Year,IoT,July,Telangana,Sneha Reddy - 8855665577,None,Prof. Kumar - kumar@college.edu
+Riya Das,riya.das12@hotmail.com,8654321098,8654321098,Jadavpur University,Information Technology,1st Year,Web Development,May,West Bengal,Arjun Banerjee - 8744556688,Amit Das - 8744556689,Prof. Chatterjee - chatterjee@college.edu
+Amit Patel,amit.patel88@gmail.com,8543210987,8543210987,COEP Pune,Electronics & Communication,3rd Year,VLSI Design,January,Maharashtra,Priya Desai - 8633445599,None,Prof. Patel - patel@college.edu
+Neha Verma,neha.verma34@yahoo.com,8432109876,8432109876,IIT Delhi,Chemical,2nd Year,Cybersecurity,June,Uttar Pradesh,Rahul Gupta - 8522334400,Rohan Verma - 8522334401,Prof. Verma - verma@college.edu
+Vihaan Nair,vihaan.nair59@gmail.com,8321098765,8321098765,IIIT Hyderabad,Computer Science,4th Year,Machine Learning,December,Kerala,Ananya Menon - 8411223311,None,Prof. Nair - nair@college.edu
+Pooja Singh,pooja.singh71@outlook.com,8210987654,8210987654,Manipal Institute of Technology,Civil,3rd Year,Cloud Computing,July,Karnataka,Kiran Rao - 8300112200,Sneha Singh - 8300112201,Prof. Singh - singh@college.edu
+Aditya Rao,aditya.rao26@gmail.com,8109876543,8109876543,Amity University,Aerospace,1st Year,Web Development,May,Andhra Pradesh,Diya Rao - 8299001100,None,Prof. Rao - rao@college.edu
+Kavya Iyer,kavya.iyer83@yahoo.com,8098765432,8098765432,Thapar Institute,Electrical,4th Year,Embedded Systems,January,Tamil Nadu,Vivaan Iyer - 8188990011,Arjun Iyer - 8188990012,Prof. Iyer - iyer@college.edu
+Sumit Yadav,sumit.yadav17@gmail.com,7987654321,7987654321,NIT Trichy,Mechanical,2nd Year,Artificial Intelligence,June,Haryana,Rohan Yadav - 8077880022,None,Prof. Yadav - yadav@college.edu
+Sara Khan,sara.khan49@hotmail.com,7876543210,7876543210,IIT Bombay,Information Technology,3rd Year,Data Science,December,Maharashtra,Aarav Khan - 7966770033,Priya Khan - 7966770034,Prof. Khan - khan@college.edu
+Reyansh Joshi,reyansh.joshi62@gmail.com,7765432109,7765432109,VIT Vellore,Electronics & Communication,4th Year,IoT,July,Punjab,Ananya Joshi - 7855660044,None,Prof. Joshi - joshi@college.edu
+Riya Mehta,riya.mehta38@yahoo.com,7654321098,7654321098,SRM University,Computer Science,1st Year,Web Development,May,Gujarat,Sneha Mehta - 7744550055,Rahul Mehta - 7744550056,Prof. Mehta - mehta@college.edu
+Arjun Reddy,arjun.reddy91@gmail.com,7543210987,7543210987,Anna University,AI & Data Science,3rd Year,Cybersecurity,January,Telangana,Kiran Reddy - 7633440066,None,Prof. Reddy - reddy@college.edu
+Diya Nair,diya.nair24@outlook.com,7432109876,7432109876,DTU Delhi,Chemical,2nd Year,Machine Learning,June,Delhi,Rohan Nair - 7522330077,Vivaan Nair - 7522330078,Prof. Nair - nair@college.edu
+Kiran Shah,kiran.shah75@gmail.com,7321098765,7321098765,BITS Pilani,Civil,4th Year,Cloud Computing,December,Maharashtra,Priya Shah - 7411220088,None,Prof. Shah - shah@college.edu
+Rohan Verma,rohan.verma13@yahoo.com,7210987654,7210987654,Jadavpur University,Electrical,3rd Year,Embedded Systems,July,West Bengal,Ananya Verma - 7300110099,Amit Verma - 7300110100,Prof. Verma - verma@college.edu
+Ananya Das,ananya.das56@gmail.com,7109876543,7109876543,COEP Pune,Mechanical,1st Year,Web Development,May,Odisha,Arjun Das - 7299001100,None,Prof. Das - das@college.edu
+Vivaan Gupta,vivaan.gupta87@hotmail.com,7098765432,7098765432,IIIT Hyderabad,Information Technology,4th Year,Artificial Intelligence,January,Uttar Pradesh,Riya Gupta - 7188990011,Sneha Gupta - 7188990012,Prof. Gupta - gupta@college.edu
+Priya Rao,priya.rao31@gmail.com,6987654321,6987654321,Manipal Institute of Technology,Computer Science,2nd Year,Data Science,June,Karnataka,Kiran Rao - 7077880022,None,Prof. Rao - rao@college.edu
+Aarav Patel,aarav.patel68@yahoo.com,6876543210,6876543210,Amity University,Electronics & Communication,3rd Year,IoT,December,Gujarat,Diya Patel - 6966770033,Rahul Patel - 6966770034,Prof. Patel - patel@college.edu
+Sneha Reddy,sneha.reddy42@gmail.com,6765432109,6765432109,Thapar Institute,Aerospace,4th Year,Cybersecurity,July,Andhra Pradesh,Vivaan Reddy - 6855660044,None,Prof. Reddy - reddy@college.edu
+Rahul Singh,rahul.singh19@outlook.com,6654321098,6654321098,NIT Trichy,Chemical,1st Year,Web Development,May,Punjab,Ananya Singh - 6744550055,Arjun Singh - 6744550056,Prof. Singh - singh@college.edu
+Kavya Menon,kavya.menon84@gmail.com,6543210987,6543210987,IIT Delhi,Civil,3rd Year,Cloud Computing,January,Kerala,Rohan Menon - 6633440066,None,Prof. Menon - menon@college.edu
+Aditya Kumar,aditya.kumar27@yahoo.com,6432109876,6432109876,VIT Vellore,Electrical,2nd Year,Embedded Systems,June,Bihar,Priya Kumar - 6522330077,Sneha Kumar - 6522330078,Prof. Kumar - kumar@college.edu
+Ishaan Joshi,ishaan.joshi73@gmail.com,6321098765,6321098765,SRM University,Mechanical,4th Year,Artificial Intelligence,December,Maharashtra,Aarav Joshi - 6411220088,None,Prof. Joshi - joshi@college.edu
+Myra Desai,myra.desai58@hotmail.com,6210987654,6210987654,Anna University,Information Technology,3rd Year,Data Science,July,Gujarat,Riya Desai - 6300110099,Rahul Desai - 6300110100,Prof. Desai - desai@college.edu
+Sai Nair,sai.nair36@gmail.com,6109876543,6109876543,DTU Delhi,Computer Science,1st Year,Web Development,May,Delhi,Kiran Nair - 6299001100,None,Prof. Nair - nair@college.edu
+Riya Sharma,riya.sharma92@yahoo.com,6098765432,6098765432,BITS Pilani,AI & Data Science,4th Year,Machine Learning,January,Rajasthan,Vivaan Sharma - 6188990011,Ananya Sharma - 6188990012,Prof. Sharma - sharma@college.edu
+Arjun Verma,arjun.verma45@gmail.com,5987654321,5987654321,Jadavpur University,Electronics & Communication,2nd Year,IoT,June,West Bengal,Diya Verma - 6077880022,None,Prof. Verma - verma@college.edu
+Neha Gupta,neha.gupta61@outlook.com,5876543210,5876543210,COEP Pune,Chemical,3rd Year,Cybersecurity,December,Uttar Pradesh,Rohan Gupta - 5966770033,Amit Gupta - 5966770034,Prof. Gupta - gupta@college.edu
+Pooja Patil,pooja.patil11@gmail.com,9765432101,9765432101,IIT Madras,Aerospace,1st Year,Web Development,May,Maharashtra,Sneha Patil - 9866554433,Rahul Patil - 9866554434,Prof. Patil - patil@college.edu
+Vihaan Reddy,vihaan.reddy93@yahoo.com,9654321090,9654321090,NIT Trichy,Computer Science,4th Year,Machine Learning,June,Telangana,Ananya Reddy - 9755443322,None,Prof. Reddy - reddy@college.edu
+Riya Sen,riya.sen44@hotmail.com,9543210989,9543210989,Jadavpur University,Information Technology,3rd Year,Cloud Computing,July,West Bengal,Arjun Sen - 9644332211,Diya Sen - 9644332212,Prof. Sen - sen@college.edu
+Aditya Mishra,aditya.mishra76@gmail.com,9432109878,9432109878,BITS Pilani,Electrical,2nd Year,Embedded Systems,December,Uttar Pradesh,Aarav Mishra - 9533221100,None,Prof. Mishra - mishra@college.edu
+Kiran Rao,kiran.rao55@outlook.com,9321098767,9321098767,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,January,Karnataka,Sneha Rao - 9422110099,Vivaan Rao - 9422110098,Prof. Rao - rao@college.edu
+Ananya Pillai,ananya.pillai29@gmail.com,9210987656,9210987656,Anna University,Civil,1st Year,Web Development,May,Kerala,Rohan Pillai - 9311009988,None,Prof. Pillai - pillai@college.edu
+Rohan Deshmukh,rohan.deshmukh87@yahoo.com,9109876545,9109876545,COEP Pune,Computer Science,3rd Year,Data Science,June,Maharashtra,Priya Deshmukh - 9200998877,Rahul Deshmukh - 9200998878,Prof. Deshmukh - deshmukh@college.edu
+Ira Choudhury,ira.choudhury63@gmail.com,9098765434,9098765434,IIT Delhi,Electronics & Communication,4th Year,IoT,July,West Bengal,Ananya Choudhury - 9199887766,None,Prof. Choudhury - choudhury@college.edu
+Arjun Bhat,arjun.bhat38@hotmail.com,8987654323,8987654323,Manipal Institute of Technology,Chemical,2nd Year,Cybersecurity,December,Karnataka,Diya Bhat - 9088776655,Amit Bhat - 9088776656,Prof. Bhat - bhat@college.edu
+Sneha Kulkarni,sneha.kulkarni91@outlook.com,8876543212,8876543212,SRM University,Aerospace,4th Year,Cloud Computing,January,Maharashtra,Kiran Kulkarni - 8977665544,None,Prof. Kulkarni - kulkarni@college.edu
+Vivaan Joshi,vivaan.joshi47@gmail.com,8765432101,8765432101,DTU Delhi,Computer Science,1st Year,Web Development,May,Delhi,Sneha Joshi - 8866554433,Rohan Joshi - 8866554434,Prof. Joshi - joshi@college.edu
+Myra Nair,myra.nair82@yahoo.com,8654321090,8654321090,Amity University,Information Technology,3rd Year,Machine Learning,June,Kerala,Arjun Nair - 8755443322,None,Prof. Nair - nair@college.edu
+Aarav Menon,aarav.menon16@gmail.com,8543210989,8543210989,Thapar Institute,Mechanical,4th Year,Artificial Intelligence,July,Punjab,Ananya Menon - 8644332211,Diya Menon - 8644332212,Prof. Menon - menon@college.edu
+Diya Reddy,diya.reddy75@hotmail.com,8432109878,8432109878,IIIT Hyderabad,Electrical,2nd Year,Embedded Systems,December,Telangana,Aarav Reddy - 8533221100,None,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das34@outlook.com,8321098767,8321098767,NIT Trichy,Civil,4th Year,Web Development,January,West Bengal,Sneha Das - 8422110099,Vivaan Das - 8422110098,Prof. Das - das@college.edu
+Priya Sharma,priya.sharma59@gmail.com,8210987656,8210987656,IIT Bombay,Computer Science,1st Year,Data Science,May,Maharashtra,Rohan Sharma - 8311009988,None,Prof. Sharma - sharma@college.edu
+Ishaan Verma,ishaan.verma28@yahoo.com,8109876545,8109876545,BITS Pilani,Electronics & Communication,3rd Year,IoT,June,Delhi,Priya Verma - 8200998877,Rahul Verma - 8200998878,Prof. Verma - verma@college.edu
+Kavya Rao,kavya.rao93@gmail.com,8098765434,8098765434,VIT Vellore,Chemical,4th Year,Cybersecurity,July,Karnataka,Ananya Rao - 8199887766,None,Prof. Rao - rao@college.edu
+Aditya Singh,aditya.singh41@outlook.com,7987654323,7987654323,Anna University,Aerospace,2nd Year,Cloud Computing,December,Punjab,Diya Singh - 8088776655,Amit Singh - 8088776656,Prof. Singh - singh@college.edu
+Sara Ali,sara.ali86@hotmail.com,7876543212,7876543212,Jadavpur University,Mechanical,4th Year,Artificial Intelligence,January,West Bengal,Kiran Ali - 7977665544,None,Prof. Ali - ali@college.edu
+Vihaan Gupta,vihaan.gupta52@gmail.com,7765432101,7765432101,COEP Pune,Computer Science,1st Year,Web Development,May,Maharashtra,Sneha Gupta - 7866554433,Rohan Gupta - 7866554434,Prof. Gupta - gupta@college.edu
+Ananya Patel,ananya.patel19@yahoo.com,7654321090,7654321090,SRM University,Information Technology,3rd Year,Machine Learning,June,Gujarat,Arjun Patel - 7755443322,None,Prof. Patel - patel@college.edu
+Rohan Kumar,rohan.kumar74@gmail.com,7543210989,7543210989,Manipal Institute of Technology,Electrical,4th Year,Embedded Systems,July,Uttar Pradesh,Ananya Kumar - 7644332211,Diya Kumar - 7644332212,Prof. Kumar - kumar@college.edu
+Ira Reddy,ira.reddy37@hotmail.com,7432109878,7432109878,DTU Delhi,Civil,2nd Year,Web Development,December,Telangana,Aarav Reddy - 7533221100,None,Prof. Reddy - reddy@college.edu
+Kabir Joshi,kabir.joshi65@outlook.com,7321098767,7321098767,IIT Delhi,Computer Science,4th Year,Data Science,January,Maharashtra,Sneha Joshi - 7422110099,Vivaan Joshi - 7422110098,Prof. Joshi - joshi@college.edu
+Diya Nair,diya.nair22@gmail.com,7210987656,7210987656,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Kerala,Rohan Nair - 7311009988,None,Prof. Nair - nair@college.edu
+Arjun Sharma,arjun.sharma89@yahoo.com,7109876545,7109876545,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Priya Sharma - 7200998877,Rahul Sharma - 7200998878,Prof. Sharma - sharma@college.edu
+Sneha Verma,sneha.verma54@gmail.com,7098765434,7098765434,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Punjab,Ananya Verma - 7199887766,None,Prof. Verma - verma@college.edu
+Vivaan Das,vivaan.das12@outlook.com,6987654323,6987654323,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,West Bengal,Diya Das - 7088776655,Amit Das - 7088776656,Prof. Das - das@college.edu
+Myra Patel,myra.patel78@hotmail.com,6876543212,6876543212,Jadavpur University,Computer Science,4th Year,Web Development,January,Gujarat,Kiran Patel - 6977665544,None,Prof. Patel - patel@college.edu
+Aarav Rao,aarav.rao33@gmail.com,6765432101,6765432101,COEP Pune,Information Technology,1st Year,Data Science,May,Maharashtra,Sneha Rao - 6866554433,Rohan Rao - 6866554434,Prof. Rao - rao@college.edu
+Riya Singh,riya.singh91@yahoo.com,6654321090,6654321090,SRM University,Electrical,3rd Year,Machine Learning,June,Uttar Pradesh,Arjun Singh - 6755443322,None,Prof. Singh - singh@college.edu
+Rahul Gupta,rahul.gupta46@gmail.com,6543210989,6543210989,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Delhi,Ananya Gupta - 6644332211,Diya Gupta - 6644332212,Prof. Gupta - gupta@college.edu
+Kavya Reddy,kavya.reddy81@hotmail.com,6432109878,6432109878,DTU Delhi,Computer Science,2nd Year,Web Development,December,Telangana,Aarav Reddy - 6533221100,None,Prof. Reddy - reddy@college.edu
+Aditya Nair,aditya.nair27@outlook.com,6321098767,6321098767,IIT Bombay,Electronics & Communication,4th Year,IoT,January,Kerala,Sneha Nair - 6422110099,Vivaan Nair - 6422110098,Prof. Nair - nair@college.edu
+Ananya Sharma,ananya.sharma55@gmail.com,6210987656,6210987656,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Rohan Sharma - 6311009988,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma92@yahoo.com,6109876545,6109876545,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Maharashtra,Priya Verma - 6200998877,Rahul Verma - 6200998878,Prof. Verma - verma@college.edu
+Ishaan Das,ishaan.das38@gmail.com,6098765434,6098765434,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,West Bengal,Ananya Das - 6199887766,None,Prof. Das - das@college.edu
+Sara Patel,sara.patel64@outlook.com,5987654323,5987654323,Anna University,Computer Science,2nd Year,Web Development,December,Gujarat,Diya Patel - 6088776655,Amit Patel - 6088776656,Prof. Patel - patel@college.edu
+Rohan Iyer,rohan.iyer17@hotmail.com,5876543212,5876543212,Jadavpur University,Information Technology,4th Year,Data Science,January,Tamil Nadu,Kiran Iyer - 5977665544,None,Prof. Iyer - iyer@college.edu
+Pooja Rao,pooja.rao73@gmail.com,5765432101,5765432101,COEP Pune,Electrical,1st Year,Machine Learning,May,Karnataka,Sneha Rao - 5866554433,Rohan Rao - 5866554434,Prof. Rao - rao@college.edu
+Arjun Menon,arjun.menon29@yahoo.com,5654321090,5654321090,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Ananya Menon - 5755443322,None,Prof. Menon - menon@college.edu
+Diya Gupta,diya.gupta84@gmail.com,5543210989,5543210989,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Delhi,Aarav Gupta - 5644332211,Rahul Gupta - 5644332212,Prof. Gupta - gupta@college.edu
+Aarav Joshi,aarav.joshi51@hotmail.com,5432109878,5432109878,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Maharashtra,Sneha Joshi - 5533221100,None,Prof. Joshi - joshi@college.edu
+Riya Nair,riya.nair96@outlook.com,5321098767,5321098767,IIT Delhi,Chemical,4th Year,Cybersecurity,January,Kerala,Rohan Nair - 5422110099,Vivaan Nair - 5422110098,Prof. Nair - nair@college.edu
+Kabir Reddy,kabir.reddy43@gmail.com,5210987656,5210987656,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Andhra Pradesh,Priya Reddy - 5311009988,None,Prof. Reddy - reddy@college.edu
+Ananya Verma,ananya.verma78@yahoo.com,5109876545,5109876545,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Uttar Pradesh,Rahul Verma - 5200998877,Ananya Verma - 5200998878,Prof. Verma - verma@college.edu
+Vivaan Singh,vivaan.singh32@gmail.com,5098765434,5098765434,VIT Vellore,Computer Science,4th Year,Web Development,July,Punjab,Diya Singh - 5199887766,None,Prof. Singh - singh@college.edu
+Sneha Das,sneha.das67@outlook.com,4987654323,4987654323,Anna University,Information Technology,2nd Year,Data Science,December,West Bengal,Amit Das - 5088776655,Kiran Das - 5088776656,Prof. Das - das@college.edu
+Aditya Patel,aditya.patel14@hotmail.com,4876543212,4876543212,Jadavpur University,Electrical,4th Year,Machine Learning,January,Gujarat,Sneha Patel - 4977665544,None,Prof. Patel - patel@college.edu
+Ira Rao,ira.rao85@gmail.com,4765432101,4765432101,COEP Pune,Civil,1st Year,Embedded Systems,May,Maharashtra,Rohan Rao - 4866554433,Rahul Rao - 4866554434,Prof. Rao - rao@college.edu
+Rohan Kumar,rohan.kumar39@yahoo.com,4654321090,4654321090,SRM University,Computer Science,3rd Year,Web Development,June,Delhi,Ananya Kumar - 4755443322,None,Prof. Kumar - kumar@college.edu
+Myra Menon,myra.menon72@gmail.com,4543210989,4543210989,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Aarav Menon - 4644332211,Diya Menon - 4644332212,Prof. Menon - menon@college.edu
+Aarav Nair,aarav.nair26@hotmail.com,4432109878,4432109878,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Kerala,Sneha Nair - 4533221100,None,Prof. Nair - nair@college.edu
+Diya Sharma,diya.sharma58@outlook.com,4321098767,4321098767,IIT Bombay,Aerospace,4th Year,Cloud Computing,January,Rajasthan,Rohan Sharma - 4422110099,Vivaan Sharma - 4422110098,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma93@gmail.com,4210987656,4210987656,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Delhi,Priya Verma - 4311009988,None,Prof. Verma - verma@college.edu
+Sara Gupta,sara.gupta47@yahoo.com,4109876545,4109876545,BITS Pilani,Computer Science,3rd Year,Web Development,June,Uttar Pradesh,Rahul Gupta - 4200998877,Ananya Gupta - 4200998878,Prof. Gupta - gupta@college.edu
+Kiran Reddy,kiran.reddy81@gmail.com,4098765434,4098765434,VIT Vellore,Information Technology,4th Year,Data Science,July,Telangana,Diya Reddy - 4199887766,None,Prof. Reddy - reddy@college.edu
+Arjun Das,arjun.das35@outlook.com,3987654323,3987654323,Anna University,Electrical,2nd Year,Machine Learning,December,West Bengal,Amit Das - 4088776655,Kiran Das - 4088776656,Prof. Das - das@college.edu
+Ananya Patel,ananya.patel69@hotmail.com,3876543212,3876543212,Jadavpur University,Civil,4th Year,Embedded Systems,January,Gujarat,Sneha Patel - 3977665544,None,Prof. Patel - patel@college.edu
+Rohan Rao,rohan.rao24@gmail.com,3765432101,3765432101,COEP Pune,Computer Science,1st Year,Web Development,May,Maharashtra,Rahul Rao - 3866554433,Rohan Rao - 3866554434,Prof. Rao - rao@college.edu
+Riya Nair,riya.nair57@yahoo.com,3654321090,3654321090,SRM University,Electronics & Communication,3rd Year,IoT,June,Kerala,Ananya Nair - 3755443322,None,Prof. Nair - nair@college.edu
+Aditya Menon,aditya.menon92@gmail.com,3543210989,3543210989,Manipal Institute of Technology,Chemical,4th Year,Cybersecurity,July,Kerala,Aarav Menon - 3644332211,Diya Menon - 3644332212,Prof. Menon - menon@college.edu
+Ishaan Kumar,ishaan.kumar41@hotmail.com,3432109878,3432109878,DTU Delhi,Aerospace,2nd Year,Cloud Computing,December,Delhi,Sneha Kumar - 3533221100,None,Prof. Kumar - kumar@college.edu
+Kavya Singh,kavya.singh76@outlook.com,3321098767,3321098767,IIT Delhi,Mechanical,4th Year,Artificial Intelligence,January,Punjab,Rohan Singh - 3422110099,Vivaan Singh - 3422110098,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma18@gmail.com,3210987656,3210987656,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 3311009988,None,Prof. Sharma - sharma@college.edu
+Myra Verma,myra.verma63@yahoo.com,3109876545,3109876545,BITS Pilani,Information Technology,3rd Year,Data Science,June,Delhi,Rahul Verma - 3200998877,Ananya Verma - 3200998878,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta29@gmail.com,3098765434,3098765434,VIT Vellore,Electrical,4th Year,Machine Learning,July,Uttar Pradesh,Diya Gupta - 3199887766,None,Prof. Gupta - gupta@college.edu
+Sneha Reddy,sneha.reddy84@outlook.com,2987654323,2987654323,Anna University,Civil,2nd Year,Embedded Systems,December,Telangana,Amit Reddy - 3088776655,Kiran Reddy - 3088776656,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das51@hotmail.com,2876543212,2876543212,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 2977665544,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel96@gmail.com,2765432101,2765432101,COEP Pune,Electronics & Communication,1st Year,IoT,May,Gujarat,Rohan Patel - 2866554433,Rahul Patel - 2866554434,Prof. Patel - patel@college.edu
+Arjun Nair,arjun.nair43@yahoo.com,2654321090,2654321090,SRM University,Chemical,3rd Year,Cybersecurity,June,Kerala,Ananya Nair - 2755443322,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon78@gmail.com,2543210989,2543210989,Manipal Institute of Technology,Aerospace,4th Year,Cloud Computing,July,Kerala,Aarav Menon - 2644332211,Diya Menon - 2644332212,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar32@hotmail.com,2432109878,2432109878,DTU Delhi,Mechanical,2nd Year,Artificial Intelligence,December,Delhi,Sneha Kumar - 2533221100,None,Prof. Kumar - kumar@college.edu
+Ananya Singh,ananya.singh67@outlook.com,2321098767,2321098767,IIT Bombay,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 2422110099,Vivaan Singh - 2422110098,Prof. Singh - singh@college.edu
+Vihaan Sharma,vihaan.sharma14@gmail.com,2210987656,2210987656,NIT Trichy,Information Technology,1st Year,Data Science,May,Rajasthan,Priya Sharma - 2311009988,None,Prof. Sharma - sharma@college.edu
+Sara Verma,sara.verma85@yahoo.com,2109876545,2109876545,BITS Pilani,Electrical,3rd Year,Machine Learning,June,Delhi,Rahul Verma - 2200998877,Ananya Verma - 2200998878,Prof. Verma - verma@college.edu
+Rohan Gupta,rohan.gupta39@gmail.com,2098765434,2098765434,VIT Vellore,Civil,4th Year,Embedded Systems,July,Uttar Pradesh,Diya Gupta - 2199887766,None,Prof. Gupta - gupta@college.edu
+Ira Reddy,ira.reddy72@outlook.com,1987654323,1987654323,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 2088776655,Kiran Reddy - 2088776656,Prof. Reddy - reddy@college.edu
+Aditya Das,aditya.das26@hotmail.com,1876543212,1876543212,Jadavpur University,Electronics & Communication,4th Year,IoT,January,West Bengal,Sneha Das - 1977665544,None,Prof. Das - das@college.edu
+Kavya Patel,kavya.patel58@gmail.com,1765432101,1765432101,COEP Pune,Chemical,1st Year,Cybersecurity,May,Gujarat,Rohan Patel - 1866554433,Rahul Patel - 1866554434,Prof. Patel - patel@college.edu
+Vivaan Nair,vivaan.nair93@yahoo.com,1654321090,1654321090,SRM University,Aerospace,3rd Year,Cloud Computing,June,Kerala,Ananya Nair - 1755443322,None,Prof. Nair - nair@college.edu
+Myra Menon,myra.menon47@gmail.com,1543210989,1543210989,Manipal Institute of Technology,Mechanical,4th Year,Artificial Intelligence,July,Kerala,Aarav Menon - 1644332211,Diya Menon - 1644332212,Prof. Menon - menon@college.edu
+Aarav Kumar,aarav.kumar81@hotmail.com,1432109878,1432109878,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 1533221100,None,Prof. Kumar - kumar@college.edu
+Diya Singh,diya.singh35@outlook.com,1321098767,1321098767,IIT Delhi,Information Technology,4th Year,Data Science,January,Punjab,Rohan Singh - 1422110099,Vivaan Singh - 1422110098,Prof. Singh - singh@college.edu
+Sneha Sharma,sneha.sharma69@gmail.com,1210987656,1210987656,NIT Trichy,Electrical,1st Year,Machine Learning,May,Rajasthan,Priya Sharma - 1311009988,None,Prof. Sharma - sharma@college.edu
+Arjun Verma,arjun.verma24@yahoo.com,1109876545,1109876545,BITS Pilani,Civil,3rd Year,Embedded Systems,June,Delhi,Rahul Verma - 1200998877,Ananya Verma - 1200998878,Prof. Verma - verma@college.edu
+Riya Gupta,riya.gupta57@gmail.com,1098765434,1098765434,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 1199887766,None,Prof. Gupta - gupta@college.edu
+Kabir Reddy,kabir.reddy92@outlook.com,9876543223,9876543223,Anna University,Electronics & Communication,2nd Year,IoT,December,Telangana,Amit Reddy - 9977665544,Kiran Reddy - 9977665545,Prof. Reddy - reddy@college.edu
+Ananya Das,ananya.das41@hotmail.com,9765432112,9765432112,Jadavpur University,Chemical,4th Year,Cybersecurity,January,West Bengal,Sneha Das - 9866554433,None,Prof. Das - das@college.edu
+Vihaan Patel,vihaan.patel76@gmail.com,9654321001,9654321001,COEP Pune,Aerospace,1st Year,Cloud Computing,May,Gujarat,Rohan Patel - 9755443322,Rahul Patel - 9755443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair18@yahoo.com,9543210990,9543210990,SRM University,Mechanical,3rd Year,Artificial Intelligence,June,Kerala,Ananya Nair - 9644332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon63@gmail.com,9432109889,9432109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Aarav Menon - 9533221100,Diya Menon - 9533221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar29@hotmail.com,9321098778,9321098778,DTU Delhi,Information Technology,2nd Year,Data Science,December,Delhi,Sneha Kumar - 9422110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh84@outlook.com,9210987667,9210987667,IIT Bombay,Electrical,4th Year,Machine Learning,January,Punjab,Rohan Singh - 9311009988,Vivaan Singh - 9311009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma51@gmail.com,9109876556,9109876556,NIT Trichy,Civil,1st Year,Embedded Systems,May,Rajasthan,Priya Sharma - 9200998877,None,Prof. Sharma - sharma@college.edu
+Kavya Verma,kavya.verma96@yahoo.com,9098765445,9098765445,BITS Pilani,Computer Science,3rd Year,Web Development,June,Delhi,Rahul Verma - 9199887766,Ananya Verma - 9199887767,Prof. Verma - verma@college.edu
+Arjun Gupta,arjun.gupta43@gmail.com,8987654334,8987654334,VIT Vellore,Electronics & Communication,4th Year,IoT,July,Uttar Pradesh,Diya Gupta - 9088776655,None,Prof. Gupta - gupta@college.edu
+Myra Reddy,myra.reddy78@outlook.com,8876543223,8876543223,Anna University,Chemical,2nd Year,Cybersecurity,December,Telangana,Amit Reddy - 8977665544,Kiran Reddy - 8977665545,Prof. Reddy - reddy@college.edu
+Vivaan Das,vivaan.das32@hotmail.com,8765432112,8765432112,Jadavpur University,Aerospace,4th Year,Cloud Computing,January,West Bengal,Sneha Das - 8866554433,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel67@gmail.com,8654321001,8654321001,COEP Pune,Mechanical,1st Year,Artificial Intelligence,May,Gujarat,Rohan Patel - 8755443322,Rahul Patel - 8755443323,Prof. Patel - patel@college.edu
+Aarav Nair,aarav.nair14@yahoo.com,8543210990,8543210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Ananya Nair - 8644332211,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon85@gmail.com,8432109889,8432109889,Manipal Institute of Technology,Information Technology,4th Year,Data Science,July,Kerala,Aarav Menon - 8533221100,Diya Menon - 8533221101,Prof. Menon - menon@college.edu
+Rahul Kumar,rahul.kumar39@hotmail.com,8321098778,8321098778,DTU Delhi,Electrical,2nd Year,Machine Learning,December,Delhi,Sneha Kumar - 8422110099,None,Prof. Kumar - kumar@college.edu
+Sneha Singh,sneha.singh72@outlook.com,8210987667,8210987667,IIT Delhi,Civil,4th Year,Embedded Systems,January,Punjab,Rohan Singh - 8311009988,Vivaan Singh - 8311009989,Prof. Singh - singh@college.edu
+Ananya Sharma,ananya.sharma26@gmail.com,8109876556,8109876556,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 8200998877,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma58@yahoo.com,8098765445,8098765445,BITS Pilani,Electronics & Communication,3rd Year,IoT,June,Delhi,Rahul Verma - 8199887766,Ananya Verma - 8199887767,Prof. Verma - verma@college.edu
+Kabir Gupta,kabir.gupta93@gmail.com,7987654334,7987654334,VIT Vellore,Chemical,4th Year,Cybersecurity,July,Uttar Pradesh,Diya Gupta - 8088776655,None,Prof. Gupta - gupta@college.edu
+Sara Reddy,sara.reddy47@outlook.com,7876543223,7876543223,Anna University,Aerospace,2nd Year,Cloud Computing,December,Telangana,Amit Reddy - 7977665544,Kiran Reddy - 7977665545,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das81@hotmail.com,7765432112,7765432112,Jadavpur University,Mechanical,4th Year,Artificial Intelligence,January,West Bengal,Sneha Das - 7866554433,None,Prof. Das - das@college.edu
+Ira Patel,ira.patel35@gmail.com,7654321001,7654321001,COEP Pune,Computer Science,1st Year,Web Development,May,Gujarat,Rohan Patel - 7755443322,Rahul Patel - 7755443323,Prof. Patel - patel@college.edu
+Aditya Nair,aditya.nair69@yahoo.com,7543210990,7543210990,SRM University,Information Technology,3rd Year,Data Science,June,Kerala,Ananya Nair - 7644332211,None,Prof. Nair - nair@college.edu
+Kavya Menon,kavya.menon24@gmail.com,7432109889,7432109889,Manipal Institute of Technology,Electrical,4th Year,Machine Learning,July,Kerala,Aarav Menon - 7533221100,Diya Menon - 7533221101,Prof. Menon - menon@college.edu
+Arjun Kumar,arjun.kumar57@hotmail.com,7321098778,7321098778,DTU Delhi,Civil,2nd Year,Embedded Systems,December,Delhi,Sneha Kumar - 7422110099,None,Prof. Kumar - kumar@college.edu
+Myra Singh,myra.singh92@outlook.com,7210987667,7210987667,IIT Bombay,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 7311009988,Vivaan Singh - 7311009989,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma41@gmail.com,7109876556,7109876556,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Rajasthan,Priya Sharma - 7200998877,None,Prof. Sharma - sharma@college.edu
+Diya Verma,diya.verma76@yahoo.com,7098765445,7098765445,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Rahul Verma - 7199887766,Ananya Verma - 7199887767,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta18@gmail.com,6987654334,6987654334,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Uttar Pradesh,Diya Gupta - 7088776655,None,Prof. Gupta - gupta@college.edu
+Riya Reddy,riya.reddy63@outlook.com,6876543223,6876543223,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,Telangana,Amit Reddy - 6977665544,Kiran Reddy - 6977665545,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das29@hotmail.com,6765432112,6765432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 6866554433,None,Prof. Das - das@college.edu
+Sneha Patel,sneha.patel84@gmail.com,6654321001,6654321001,COEP Pune,Information Technology,1st Year,Data Science,May,Gujarat,Rohan Patel - 6755443322,Rahul Patel - 6755443323,Prof. Patel - patel@college.edu
+Ananya Nair,ananya.nair51@yahoo.com,6543210990,6543210990,SRM University,Electrical,3rd Year,Machine Learning,June,Kerala,Aarav Nair - 6644332211,None,Prof. Nair - nair@college.edu
+Vihaan Menon,vihaan.menon96@gmail.com,6432109889,6432109889,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Kerala,Diya Menon - 6533221100,Aarav Menon - 6533221101,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar43@hotmail.com,6321098778,6321098778,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 6422110099,None,Prof. Kumar - kumar@college.edu
+Sara Singh,sara.singh78@outlook.com,6210987667,6210987667,IIT Delhi,Electronics & Communication,4th Year,IoT,January,Punjab,Rohan Singh - 6311009988,Vivaan Singh - 6311009989,Prof. Singh - singh@college.edu
+Rohan Sharma,rohan.sharma32@gmail.com,6109876556,6109876556,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Priya Sharma - 6200998877,None,Prof. Sharma - sharma@college.edu
+Pooja Verma,pooja.verma67@yahoo.com,6098765445,6098765445,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Delhi,Rahul Verma - 6199887766,Ananya Verma - 6199887767,Prof. Verma - verma@college.edu
+Aditya Gupta,aditya.gupta14@gmail.com,5987654334,5987654334,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,Uttar Pradesh,Diya Gupta - 6088776655,None,Prof. Gupta - gupta@college.edu
+Ishaan Reddy,ishaan.reddy85@outlook.com,5876543223,5876543223,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 5977665544,Kiran Reddy - 5977665545,Prof. Reddy - reddy@college.edu
+Kavya Das,kavya.das39@hotmail.com,5765432112,5765432112,Jadavpur University,Information Technology,4th Year,Data Science,January,West Bengal,Sneha Das - 5866554433,None,Prof. Das - das@college.edu
+Arjun Patel,arjun.patel72@gmail.com,5654321001,5654321001,COEP Pune,Electrical,1st Year,Machine Learning,May,Gujarat,Rohan Patel - 5755443322,Rahul Patel - 5755443323,Prof. Patel - patel@college.edu
+Myra Nair,myra.nair26@yahoo.com,5543210990,5543210990,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Aarav Nair - 5644332211,None,Prof. Nair - nair@college.edu
+Vivaan Menon,vivaan.menon58@gmail.com,5432109889,5432109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Diya Menon - 5533221100,Aarav Menon - 5533221101,Prof. Menon - menon@college.edu
+Diya Kumar,diya.kumar93@hotmail.com,5321098778,5321098778,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Delhi,Sneha Kumar - 5422110099,None,Prof. Kumar - kumar@college.edu
+Aarav Singh,aarav.singh47@outlook.com,5210987667,5210987667,IIT Bombay,Chemical,4th Year,Cybersecurity,January,Punjab,Rohan Singh - 5311009988,Vivaan Singh - 5311009989,Prof. Singh - singh@college.edu
+Riya Sharma,riya.sharma81@gmail.com,5109876556,5109876556,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Rajasthan,Priya Sharma - 5200998877,None,Prof. Sharma - sharma@college.edu
+Rahul Verma,rahul.verma35@yahoo.com,5098765445,5098765445,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Delhi,Rahul Verma - 5199887766,Ananya Verma - 5199887767,Prof. Verma - verma@college.edu
+Sneha Gupta,sneha.gupta69@gmail.com,4987654334,4987654334,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 5088776655,None,Prof. Gupta - gupta@college.edu
+Ananya Reddy,ananya.reddy24@outlook.com,4876543223,4876543223,Anna University,Information Technology,2nd Year,Data Science,December,Telangana,Amit Reddy - 4977665544,Kiran Reddy - 4977665545,Prof. Reddy - reddy@college.edu
+Vihaan Das,vihaan.das57@hotmail.com,4765432112,4765432112,Jadavpur University,Electrical,4th Year,Machine Learning,January,West Bengal,Sneha Das - 4866554433,None,Prof. Das - das@college.edu
+Kabir Patel,kabir.patel92@gmail.com,4654321001,4654321001,COEP Pune,Civil,1st Year,Embedded Systems,May,Gujarat,Rohan Patel - 4755443322,Rahul Patel - 4755443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair41@yahoo.com,4543210990,4543210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Aarav Nair - 4644332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon76@gmail.com,4432109889,4432109889,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Diya Menon - 4533221100,Aarav Menon - 4533221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar18@hotmail.com,4321098778,4321098778,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Delhi,Sneha Kumar - 4422110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh63@outlook.com,4210987667,4210987667,IIT Delhi,Aerospace,4th Year,Cloud Computing,January,Punjab,Rohan Singh - 4311009988,Vivaan Singh - 4311009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma29@gmail.com,4109876556,4109876556,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Rajasthan,Priya Sharma - 4200998877,None,Prof. Sharma - sharma@college.edu
+Kavya Verma,kavya.verma84@yahoo.com,4098765445,4098765445,BITS Pilani,Computer Science,3rd Year,Web Development,June,Delhi,Rahul Verma - 4199887766,Ananya Verma - 4199887767,Prof. Verma - verma@college.edu
+Arjun Gupta,arjun.gupta51@gmail.com,3987654334,3987654334,VIT Vellore,Information Technology,4th Year,Data Science,July,Uttar Pradesh,Diya Gupta - 4088776655,None,Prof. Gupta - gupta@college.edu
+Myra Reddy,myra.reddy96@outlook.com,3876543223,3876543223,Anna University,Electrical,2nd Year,Machine Learning,December,Telangana,Amit Reddy - 3977665544,Kiran Reddy - 3977665545,Prof. Reddy - reddy@college.edu
+Vivaan Das,vivaan.das43@hotmail.com,3765432112,3765432112,Jadavpur University,Civil,4th Year,Embedded Systems,January,West Bengal,Sneha Das - 3866554433,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel78@gmail.com,3654321001,3654321001,COEP Pune,Computer Science,1st Year,Web Development,May,Gujarat,Rohan Patel - 3755443322,Rahul Patel - 3755443323,Prof. Patel - patel@college.edu
+Aarav Nair,aarav.nair32@yahoo.com,3543210990,3543210990,SRM University,Electronics & Communication,3rd Year,IoT,June,Kerala,Ananya Nair - 3644332211,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon67@gmail.com,3432109889,3432109889,Manipal Institute of Technology,Chemical,4th Year,Cybersecurity,July,Kerala,Aarav Menon - 3533221100,Diya Menon - 3533221101,Prof. Menon - menon@college.edu
+Rahul Kumar,rahul.kumar14@hotmail.com,3321098778,3321098778,DTU Delhi,Aerospace,2nd Year,Cloud Computing,December,Delhi,Sneha Kumar - 3422110099,None,Prof. Kumar - kumar@college.edu
+Sneha Singh,sneha.singh85@outlook.com,3210987667,3210987667,IIT Bombay,Mechanical,4th Year,Artificial Intelligence,January,Punjab,Rohan Singh - 3311009988,Vivaan Singh - 3311009989,Prof. Singh - singh@college.edu
+Ananya Sharma,ananya.sharma39@gmail.com,3109876556,3109876556,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 3200998877,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma72@yahoo.com,3098765445,3098765445,BITS Pilani,Information Technology,3rd Year,Data Science,June,Delhi,Rahul Verma - 3199887766,Ananya Verma - 3199887767,Prof. Verma - verma@college.edu
+Kabir Gupta,kabir.gupta26@gmail.com,2987654334,2987654334,VIT Vellore,Electrical,4th Year,Machine Learning,July,Uttar Pradesh,Diya Gupta - 3088776655,None,Prof. Gupta - gupta@college.edu
+Sara Reddy,sara.reddy58@outlook.com,2876543223,2876543223,Anna University,Civil,2nd Year,Embedded Systems,December,Telangana,Amit Reddy - 2977665544,Kiran Reddy - 2977665545,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das93@hotmail.com,2765432112,2765432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 2866554433,None,Prof. Das - das@college.edu
+Ira Patel,ira.patel47@gmail.com,2654321001,2654321001,COEP Pune,Electronics & Communication,1st Year,IoT,May,Gujarat,Rohan Patel - 2755443322,Rahul Patel - 2755443323,Prof. Patel - patel@college.edu
+Aditya Nair,aditya.nair81@yahoo.com,2543210990,2543210990,SRM University,Chemical,3rd Year,Cybersecurity,June,Kerala,Ananya Nair - 2644332211,None,Prof. Nair - nair@college.edu
+Kavya Menon,kavya.menon35@gmail.com,2432109889,2432109889,Manipal Institute of Technology,Aerospace,4th Year,Cloud Computing,July,Kerala,Aarav Menon - 2533221100,Diya Menon - 2533221101,Prof. Menon - menon@college.edu
+Arjun Kumar,arjun.kumar69@hotmail.com,2321098778,2321098778,DTU Delhi,Mechanical,2nd Year,Artificial Intelligence,December,Delhi,Sneha Kumar - 2422110099,None,Prof. Kumar - kumar@college.edu
+Myra Singh,myra.singh24@outlook.com,2210987667,2210987667,IIT Delhi,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 2311009988,Vivaan Singh - 2311009989,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma57@gmail.com,2109876556,2109876556,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Rajasthan,Priya Sharma - 2200998877,None,Prof. Sharma - sharma@college.edu
+Diya Verma,diya.verma92@yahoo.com,2098765445,2098765445,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Rahul Verma - 2199887766,Ananya Verma - 2199887767,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta41@gmail.com,1987654334,1987654334,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Uttar Pradesh,Diya Gupta - 2088776655,None,Prof. Gupta - gupta@college.edu
+Riya Reddy,riya.reddy76@outlook.com,1876543223,1876543223,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,Telangana,Amit Reddy - 1977665544,Kiran Reddy - 1977665545,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das18@hotmail.com,1765432112,1765432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 1866554433,None,Prof. Das - das@college.edu
+Sneha Patel,sneha.patel63@gmail.com,1654321001,1654321001,COEP Pune,Information Technology,1st Year,Data Science,May,Gujarat,Rohan Patel - 1755443322,Rahul Patel - 1755443323,Prof. Patel - patel@college.edu
+Ananya Nair,ananya.nair29@yahoo.com,1543210990,1543210990,SRM University,Electrical,3rd Year,Machine Learning,June,Kerala,Aarav Nair - 1644332211,None,Prof. Nair - nair@college.edu
+Vihaan Menon,vihaan.menon84@gmail.com,1432109889,1432109889,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Kerala,Diya Menon - 1533221100,Aarav Menon - 1533221101,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar51@hotmail.com,1321098778,1321098778,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 1422110099,None,Prof. Kumar - kumar@college.edu
+Sara Singh,sara.singh96@outlook.com,1210987667,1210987667,IIT Delhi,Electronics & Communication,4th Year,IoT,January,Punjab,Rohan Singh - 1311009988,Vivaan Singh - 1311009989,Prof. Singh - singh@college.edu
+Rohan Sharma,rohan.sharma43@gmail.com,1109876556,1109876556,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Priya Sharma - 1200998877,None,Prof. Sharma - sharma@college.edu
+Pooja Verma,pooja.verma78@yahoo.com,1098765445,1098765445,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Delhi,Rahul Verma - 1199887766,Ananya Verma - 1199887767,Prof. Verma - verma@college.edu
+Aditya Gupta,aditya.gupta32@gmail.com,1087654334,1087654334,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,Uttar Pradesh,Diya Gupta - 1188776655,None,Prof. Gupta - gupta@college.edu
+Ishaan Reddy,ishaan.reddy67@outlook.com,1076543223,1076543223,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 1177665544,Kiran Reddy - 1177665545,Prof. Reddy - reddy@college.edu
+Kavya Das,kavya.das14@hotmail.com,1065432112,1065432112,Jadavpur University,Information Technology,4th Year,Data Science,January,West Bengal,Sneha Das - 1166554433,None,Prof. Das - das@college.edu
+Arjun Patel,arjun.patel85@gmail.com,1054321001,1054321001,COEP Pune,Electrical,1st Year,Machine Learning,May,Gujarat,Rohan Patel - 1155443322,Rahul Patel - 1155443323,Prof. Patel - patel@college.edu
+Myra Nair,myra.nair39@yahoo.com,1043210990,1043210990,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Aarav Nair - 1144332211,None,Prof. Nair - nair@college.edu
+Vivaan Menon,vivaan.menon72@gmail.com,1032109889,1032109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Diya Menon - 1133221100,Aarav Menon - 1133221101,Prof. Menon - menon@college.edu
+Diya Kumar,diya.kumar26@hotmail.com,1021098778,1021098778,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Delhi,Sneha Kumar - 1122110099,None,Prof. Kumar - kumar@college.edu
+Aarav Singh,aarav.singh58@outlook.com,1010987667,1010987667,IIT Bombay,Chemical,4th Year,Cybersecurity,January,Punjab,Rohan Singh - 1111009988,Vivaan Singh - 1111009989,Prof. Singh - singh@college.edu
+Riya Sharma,riya.sharma93@gmail.com,1009876556,1009876556,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Rajasthan,Priya Sharma - 1100998877,None,Prof. Sharma - sharma@college.edu
+Rahul Verma,rahul.verma47@yahoo.com,9998765445,9998765445,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Delhi,Rahul Verma - 1099887766,Ananya Verma - 1099887767,Prof. Verma - verma@college.edu
+Sneha Gupta,sneha.gupta81@gmail.com,9987654334,9987654334,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 1088776655,None,Prof. Gupta - gupta@college.edu
+Ananya Reddy,ananya.reddy35@outlook.com,9976543223,9976543223,Anna University,Information Technology,2nd Year,Data Science,December,Telangana,Amit Reddy - 1077665544,Kiran Reddy - 1077665545,Prof. Reddy - reddy@college.edu
+Vihaan Das,vihaan.das69@hotmail.com,9965432112,9965432112,Jadavpur University,Electrical,4th Year,Machine Learning,January,West Bengal,Sneha Das - 1066554433,None,Prof. Das - das@college.edu
+Kabir Patel,kabir.patel24@gmail.com,9954321001,9954321001,COEP Pune,Civil,1st Year,Embedded Systems,May,Gujarat,Rohan Patel - 1055443322,Rahul Patel - 1055443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair57@yahoo.com,9943210990,9943210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Aarav Nair - 1044332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon92@gmail.com,9932109889,9932109889,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Diya Menon - 1033221100,Aarav Menon - 1033221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar41@hotmail.com,9921098778,9921098778,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Delhi,Sneha Kumar - 1022110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh76@outlook.com,9910987667,9910987667,IIT Delhi,Aerospace,4th Year,Cloud Computing,January,Punjab,Rohan Singh - 1011009988,Vivaan Singh - 1011009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma18@gmail.com,9909876556,9909876556,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Rajasthan,Priya Sharma - 1000998877,None,Prof. Sharma - sharma@college.edu
+Kavya Verma,kavya.verma63@yahoo.com,9898765445,9898765445,BITS Pilani,Computer Science,3rd Year,Web Development,June,Delhi,Rahul Verma - 9999887766,Ananya Verma - 9999887767,Prof. Verma - verma@college.edu
+Arjun Gupta,arjun.gupta29@gmail.com,9887654334,9887654334,VIT Vellore,Information Technology,4th Year,Data Science,July,Uttar Pradesh,Diya Gupta - 9988776655,None,Prof. Gupta - gupta@college.edu
+Myra Reddy,myra.reddy84@outlook.com,9876543223,9876543223,Anna University,Electrical,2nd Year,Machine Learning,December,Telangana,Amit Reddy - 9977665544,Kiran Reddy - 9977665545,Prof. Reddy - reddy@college.edu
+Vivaan Das,vivaan.das51@hotmail.com,9865432112,9865432112,Jadavpur University,Civil,4th Year,Embedded Systems,January,West Bengal,Sneha Das - 9966554433,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel96@gmail.com,9854321001,9854321001,COEP Pune,Computer Science,1st Year,Web Development,May,Gujarat,Rohan Patel - 9955443322,Rahul Patel - 9955443323,Prof. Patel - patel@college.edu
+Aarav Nair,aarav.nair43@yahoo.com,9843210990,9843210990,SRM University,Electronics & Communication,3rd Year,IoT,June,Kerala,Ananya Nair - 9944332211,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon78@gmail.com,9832109889,9832109889,Manipal Institute of Technology,Chemical,4th Year,Cybersecurity,July,Kerala,Aarav Menon - 9933221100,Diya Menon - 9933221101,Prof. Menon - menon@college.edu
+Rahul Kumar,rahul.kumar32@hotmail.com,9821098778,9821098778,DTU Delhi,Aerospace,2nd Year,Cloud Computing,December,Delhi,Sneha Kumar - 9922110099,None,Prof. Kumar - kumar@college.edu
+Sneha Singh,sneha.singh67@outlook.com,9810987667,9810987667,IIT Bombay,Mechanical,4th Year,Artificial Intelligence,January,Punjab,Rohan Singh - 9911009988,Vivaan Singh - 9911009989,Prof. Singh - singh@college.edu
+Ananya Sharma,ananya.sharma14@gmail.com,9809876556,9809876556,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 9900998877,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma85@yahoo.com,9798765445,9798765445,BITS Pilani,Information Technology,3rd Year,Data Science,June,Delhi,Rahul Verma - 9899887766,Ananya Verma - 9899887767,Prof. Verma - verma@college.edu
+Kabir Gupta,kabir.gupta39@gmail.com,9787654334,9787654334,VIT Vellore,Electrical,4th Year,Machine Learning,July,Uttar Pradesh,Diya Gupta - 9888776655,None,Prof. Gupta - gupta@college.edu
+Sara Reddy,sara.reddy72@outlook.com,9776543223,9776543223,Anna University,Civil,2nd Year,Embedded Systems,December,Telangana,Amit Reddy - 9877665544,Kiran Reddy - 9877665545,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das26@hotmail.com,9765432112,9765432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 9866554433,None,Prof. Das - das@college.edu
+Ira Patel,ira.patel58@gmail.com,9754321001,9754321001,COEP Pune,Electronics & Communication,1st Year,IoT,May,Gujarat,Rohan Patel - 9855443322,Rahul Patel - 9855443323,Prof. Patel - patel@college.edu
+Aditya Nair,aditya.nair93@yahoo.com,9743210990,9743210990,SRM University,Chemical,3rd Year,Cybersecurity,June,Kerala,Ananya Nair - 9844332211,None,Prof. Nair - nair@college.edu
+Kavya Menon,kavya.menon47@gmail.com,9732109889,9732109889,Manipal Institute of Technology,Aerospace,4th Year,Cloud Computing,July,Kerala,Aarav Menon - 9833221100,Diya Menon - 9833221101,Prof. Menon - menon@college.edu
+Arjun Kumar,arjun.kumar81@hotmail.com,9721098778,9721098778,DTU Delhi,Mechanical,2nd Year,Artificial Intelligence,December,Delhi,Sneha Kumar - 9822110099,None,Prof. Kumar - kumar@college.edu
+Myra Singh,myra.singh35@outlook.com,9710987667,9710987667,IIT Delhi,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 9811009988,Vivaan Singh - 9811009989,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma69@gmail.com,9709876556,9709876556,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Rajasthan,Priya Sharma - 9800998877,None,Prof. Sharma - sharma@college.edu
+Diya Verma,diya.verma24@yahoo.com,9698765445,9698765445,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Rahul Verma - 9799887766,Ananya Verma - 9799887767,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta57@gmail.com,9687654334,9687654334,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Uttar Pradesh,Diya Gupta - 9788776655,None,Prof. Gupta - gupta@college.edu
+Riya Reddy,riya.reddy92@outlook.com,9676543223,9676543223,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,Telangana,Amit Reddy - 9777665544,Kiran Reddy - 9777665545,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das41@hotmail.com,9665432112,9665432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 9766554433,None,Prof. Das - das@college.edu
+Sneha Patel,sneha.patel76@gmail.com,9654321001,9654321001,COEP Pune,Information Technology,1st Year,Data Science,May,Gujarat,Rohan Patel - 9755443322,Rahul Patel - 9755443323,Prof. Patel - patel@college.edu
+Ananya Nair,ananya.nair18@yahoo.com,9643210990,9643210990,SRM University,Electrical,3rd Year,Machine Learning,June,Kerala,Aarav Nair - 9744332211,None,Prof. Nair - nair@college.edu
+Vihaan Menon,vihaan.menon63@gmail.com,9632109889,9632109889,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Kerala,Diya Menon - 9733221100,Aarav Menon - 9733221101,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar29@hotmail.com,9621098778,9621098778,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 9722110099,None,Prof. Kumar - kumar@college.edu
+Sara Singh,sara.singh84@outlook.com,9610987667,9610987667,IIT Delhi,Electronics & Communication,4th Year,IoT,January,Punjab,Rohan Singh - 9711009988,Vivaan Singh - 9711009989,Prof. Singh - singh@college.edu
+Rohan Sharma,rohan.sharma51@gmail.com,9609876556,9609876556,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Priya Sharma - 9700998877,None,Prof. Sharma - sharma@college.edu
+Pooja Verma,pooja.verma96@yahoo.com,9598765445,9598765445,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Delhi,Rahul Verma - 9699887766,Ananya Verma - 9699887767,Prof. Verma - verma@college.edu
+Aditya Gupta,aditya.gupta43@gmail.com,9587654334,9587654334,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,Uttar Pradesh,Diya Gupta - 9688776655,None,Prof. Gupta - gupta@college.edu
+Ishaan Reddy,ishaan.reddy78@outlook.com,9576543223,9576543223,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 9677665544,Kiran Reddy - 9677665545,Prof. Reddy - reddy@college.edu
+Kavya Das,kavya.das32@hotmail.com,9565432112,9565432112,Jadavpur University,Information Technology,4th Year,Data Science,January,West Bengal,Sneha Das - 9666554433,None,Prof. Das - das@college.edu
+Arjun Patel,arjun.patel67@gmail.com,9554321001,9554321001,COEP Pune,Electrical,1st Year,Machine Learning,May,Gujarat,Rohan Patel - 9655443322,Rahul Patel - 9655443323,Prof. Patel - patel@college.edu
+Myra Nair,myra.nair14@yahoo.com,9543210990,9543210990,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Aarav Nair - 9644332211,None,Prof. Nair - nair@college.edu
+Vivaan Menon,vivaan.menon85@gmail.com,9532109889,9532109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Diya Menon - 9633221100,Aarav Menon - 9633221101,Prof. Menon - menon@college.edu
+Diya Kumar,diya.kumar39@hotmail.com,9521098778,9521098778,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Delhi,Sneha Kumar - 9622110099,None,Prof. Kumar - kumar@college.edu
+Aarav Singh,aarav.singh72@outlook.com,9510987667,9510987667,IIT Bombay,Chemical,4th Year,Cybersecurity,January,Punjab,Rohan Singh - 9611009988,Vivaan Singh - 9611009989,Prof. Singh - singh@college.edu
+Riya Sharma,riya.sharma26@gmail.com,9509876556,9509876556,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Rajasthan,Priya Sharma - 9600998877,None,Prof. Sharma - sharma@college.edu
+Rahul Verma,rahul.verma58@yahoo.com,9498765445,9498765445,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Delhi,Rahul Verma - 9599887766,Ananya Verma - 9599887767,Prof. Verma - verma@college.edu
+Sneha Gupta,sneha.gupta93@gmail.com,9487654334,9487654334,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 9588776655,None,Prof. Gupta - gupta@college.edu
+Ananya Reddy,ananya.reddy47@outlook.com,9476543223,9476543223,Anna University,Information Technology,2nd Year,Data Science,December,Telangana,Amit Reddy - 9577665544,Kiran Reddy - 9577665545,Prof. Reddy - reddy@college.edu
+Vihaan Das,vihaan.das81@hotmail.com,9465432112,9465432112,Jadavpur University,Electrical,4th Year,Machine Learning,January,West Bengal,Sneha Das - 9566554433,None,Prof. Das - das@college.edu
+Kabir Patel,kabir.patel35@gmail.com,9454321001,9454321001,COEP Pune,Civil,1st Year,Embedded Systems,May,Gujarat,Rohan Patel - 9555443322,Rahul Patel - 9555443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair69@yahoo.com,9443210990,9443210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Aarav Nair - 9544332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon24@gmail.com,9432109889,9432109889,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Diya Menon - 9533221100,Aarav Menon - 9533221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar57@hotmail.com,9421098778,9421098778,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Delhi,Sneha Kumar - 9522110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh92@outlook.com,9410987667,9410987667,IIT Delhi,Aerospace,4th Year,Cloud Computing,January,Punjab,Rohan Singh - 9511009988,Vivaan Singh - 9511009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma41@gmail.com,9409876556,9409876556,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Rajasthan,Priya Sharma - 9500998877,None,Prof. Sharma - sharma@college.edu
+Kavya Verma,kavya.verma76@yahoo.com,9398765445,9398765445,BITS Pilani,Computer Science,3rd Year,Web Development,June,Delhi,Rahul Verma - 9499887766,Ananya Verma - 9499887767,Prof. Verma - verma@college.edu
+Arjun Gupta,arjun.gupta18@gmail.com,9387654334,9387654334,VIT Vellore,Information Technology,4th Year,Data Science,July,Uttar Pradesh,Diya Gupta - 9488776655,None,Prof. Gupta - gupta@college.edu
+Myra Reddy,myra.reddy63@outlook.com,9376543223,9376543223,Anna University,Electrical,2nd Year,Machine Learning,December,Telangana,Amit Reddy - 9477665544,Kiran Reddy - 9477665545,Prof. Reddy - reddy@college.edu
+Vivaan Das,vivaan.das29@hotmail.com,9365432112,9365432112,Jadavpur University,Civil,4th Year,Embedded Systems,January,West Bengal,Sneha Das - 9466554433,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel84@gmail.com,9354321001,9354321001,COEP Pune,Computer Science,1st Year,Web Development,May,Gujarat,Rohan Patel - 9455443322,Rahul Patel - 9455443323,Prof. Patel - patel@college.edu
+Aarav Nair,aarav.nair51@yahoo.com,9343210990,9343210990,SRM University,Electronics & Communication,3rd Year,IoT,June,Kerala,Ananya Nair - 9444332211,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon96@gmail.com,9332109889,9332109889,Manipal Institute of Technology,Chemical,4th Year,Cybersecurity,July,Kerala,Aarav Menon - 9433221100,Diya Menon - 9433221101,Prof. Menon - menon@college.edu
+Rahul Kumar,rahul.kumar43@hotmail.com,9321098778,9321098778,DTU Delhi,Aerospace,2nd Year,Cloud Computing,December,Delhi,Sneha Kumar - 9422110099,None,Prof. Kumar - kumar@college.edu
+Sneha Singh,sneha.singh78@outlook.com,9310987667,9310987667,IIT Bombay,Mechanical,4th Year,Artificial Intelligence,January,Punjab,Rohan Singh - 9411009988,Vivaan Singh - 9411009989,Prof. Singh - singh@college.edu
+Ananya Sharma,ananya.sharma32@gmail.com,9309876556,9309876556,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 9400998877,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma67@yahoo.com,9298765445,9298765445,BITS Pilani,Information Technology,3rd Year,Data Science,June,Delhi,Rahul Verma - 9399887766,Ananya Verma - 9399887767,Prof. Verma - verma@college.edu
+Kabir Gupta,kabir.gupta14@gmail.com,9287654334,9287654334,VIT Vellore,Electrical,4th Year,Machine Learning,July,Uttar Pradesh,Diya Gupta - 9388776655,None,Prof. Gupta - gupta@college.edu
+Sara Reddy,sara.reddy85@outlook.com,9276543223,9276543223,Anna University,Civil,2nd Year,Embedded Systems,December,Telangana,Amit Reddy - 9377665544,Kiran Reddy - 9377665545,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das39@hotmail.com,9265432112,9265432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 9366554433,None,Prof. Das - das@college.edu
+Ira Patel,ira.patel72@gmail.com,9254321001,9254321001,COEP Pune,Electronics & Communication,1st Year,IoT,May,Gujarat,Rohan Patel - 9355443322,Rahul Patel - 9355443323,Prof. Patel - patel@college.edu
+Aditya Nair,aditya.nair26@yahoo.com,9243210990,9243210990,SRM University,Chemical,3rd Year,Cybersecurity,June,Kerala,Ananya Nair - 9344332211,None,Prof. Nair - nair@college.edu
+Kavya Menon,kavya.menon58@gmail.com,9232109889,9232109889,Manipal Institute of Technology,Aerospace,4th Year,Cloud Computing,July,Kerala,Aarav Menon - 9333221100,Diya Menon - 9333221101,Prof. Menon - menon@college.edu
+Arjun Kumar,arjun.kumar93@hotmail.com,9221098778,9221098778,DTU Delhi,Mechanical,2nd Year,Artificial Intelligence,December,Delhi,Sneha Kumar - 9322110099,None,Prof. Kumar - kumar@college.edu
+Myra Singh,myra.singh47@outlook.com,9210987667,9210987667,IIT Delhi,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 9311009988,Vivaan Singh - 9311009989,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma81@gmail.com,9209876556,9209876556,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Rajasthan,Priya Sharma - 9300998877,None,Prof. Sharma - sharma@college.edu
+Diya Verma,diya.verma35@yahoo.com,9198765445,9198765445,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Rahul Verma - 9299887766,Ananya Verma - 9299887767,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta69@gmail.com,9187654334,9187654334,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Uttar Pradesh,Diya Gupta - 9288776655,None,Prof. Gupta - gupta@college.edu
+Riya Reddy,riya.reddy24@outlook.com,9176543223,9176543223,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,Telangana,Amit Reddy - 9277665544,Kiran Reddy - 9277665545,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das57@hotmail.com,9165432112,9165432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 9266554433,None,Prof. Das - das@college.edu
+Sneha Patel,sneha.patel92@gmail.com,9154321001,9154321001,COEP Pune,Information Technology,1st Year,Data Science,May,Gujarat,Rohan Patel - 9255443322,Rahul Patel - 9255443323,Prof. Patel - patel@college.edu
+Ananya Nair,ananya.nair41@yahoo.com,9143210990,9143210990,SRM University,Electrical,3rd Year,Machine Learning,June,Kerala,Aarav Nair - 9244332211,None,Prof. Nair - nair@college.edu
+Vihaan Menon,vihaan.menon76@gmail.com,9132109889,9132109889,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Kerala,Diya Menon - 9233221100,Aarav Menon - 9233221101,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar18@hotmail.com,9121098778,9121098778,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 9222110099,None,Prof. Kumar - kumar@college.edu
+Sara Singh,sara.singh63@outlook.com,9110987667,9110987667,IIT Delhi,Electronics & Communication,4th Year,IoT,January,Punjab,Rohan Singh - 9211009988,Vivaan Singh - 9211009989,Prof. Singh - singh@college.edu
+Rohan Sharma,rohan.sharma29@gmail.com,9109876556,9109876556,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Priya Sharma - 9200998877,None,Prof. Sharma - sharma@college.edu
+Pooja Verma,pooja.verma84@yahoo.com,9098765445,9098765445,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Delhi,Rahul Verma - 9199887766,Ananya Verma - 9199887767,Prof. Verma - verma@college.edu
+Aditya Gupta,aditya.gupta51@gmail.com,9087654334,9087654334,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,Uttar Pradesh,Diya Gupta - 9188776655,None,Prof. Gupta - gupta@college.edu
+Ishaan Reddy,ishaan.reddy96@outlook.com,9076543223,9076543223,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 9177665544,Kiran Reddy - 9177665545,Prof. Reddy - reddy@college.edu
+Kavya Das,kavya.das43@hotmail.com,9065432112,9065432112,Jadavpur University,Information Technology,4th Year,Data Science,January,West Bengal,Sneha Das - 9166554433,None,Prof. Das - das@college.edu
+Arjun Patel,arjun.patel78@gmail.com,9054321001,9054321001,COEP Pune,Electrical,1st Year,Machine Learning,May,Gujarat,Rohan Patel - 9155443322,Rahul Patel - 9155443323,Prof. Patel - patel@college.edu
+Myra Nair,myra.nair32@yahoo.com,9043210990,9043210990,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Aarav Nair - 9144332211,None,Prof. Nair - nair@college.edu
+Vivaan Menon,vivaan.menon67@gmail.com,9032109889,9032109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Diya Menon - 9133221100,Aarav Menon - 9133221101,Prof. Menon - menon@college.edu
+Diya Kumar,diya.kumar14@hotmail.com,9021098778,9021098778,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Delhi,Sneha Kumar - 9122110099,None,Prof. Kumar - kumar@college.edu
+Aarav Singh,aarav.singh85@outlook.com,9010987667,9010987667,IIT Bombay,Chemical,4th Year,Cybersecurity,January,Punjab,Rohan Singh - 9111009988,Vivaan Singh - 9111009989,Prof. Singh - singh@college.edu
+Riya Sharma,riya.sharma39@gmail.com,9009876556,9009876556,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Rajasthan,Priya Sharma - 9100998877,None,Prof. Sharma - sharma@college.edu
+Rahul Verma,rahul.verma72@yahoo.com,8998765445,8998765445,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Delhi,Rahul Verma - 9099887766,Ananya Verma - 9099887767,Prof. Verma - verma@college.edu
+Sneha Gupta,sneha.gupta26@gmail.com,8987654334,8987654334,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 9088776655,None,Prof. Gupta - gupta@college.edu
+Ananya Reddy,ananya.reddy58@outlook.com,8976543223,8976543223,Anna University,Information Technology,2nd Year,Data Science,December,Telangana,Amit Reddy - 9077665544,Kiran Reddy - 9077665545,Prof. Reddy - reddy@college.edu
+Vihaan Das,vihaan.das93@hotmail.com,8965432112,8965432112,Jadavpur University,Electrical,4th Year,Machine Learning,January,West Bengal,Sneha Das - 9066554433,None,Prof. Das - das@college.edu
+Kabir Patel,kabir.patel47@gmail.com,8954321001,8954321001,COEP Pune,Civil,1st Year,Embedded Systems,May,Gujarat,Rohan Patel - 9055443322,Rahul Patel - 9055443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair81@yahoo.com,8943210990,8943210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Aarav Nair - 9044332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon35@gmail.com,8932109889,8932109889,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Diya Menon - 9033221100,Aarav Menon - 9033221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar69@hotmail.com,8921098778,8921098778,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Delhi,Sneha Kumar - 9022110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh24@outlook.com,8910987667,8910987667,IIT Delhi,Aerospace,4th Year,Cloud Computing,January,Punjab,Rohan Singh - 9011009988,Vivaan Singh - 9011009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma57@gmail.com,8909876556,8909876556,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Rajasthan,Priya Sharma - 9000998877,None,Prof. Sharma - sharma@college.edu
+Kavya Verma,kavya.verma92@yahoo.com,8898765445,8898765445,BITS Pilani,Computer Science,3rd Year,Web Development,June,Delhi,Rahul Verma - 8999887766,Ananya Verma - 8999887767,Prof. Verma - verma@college.edu
+Arjun Gupta,arjun.gupta41@gmail.com,8887654334,8887654334,VIT Vellore,Information Technology,4th Year,Data Science,July,Uttar Pradesh,Diya Gupta - 8988776655,None,Prof. Gupta - gupta@college.edu
+Myra Reddy,myra.reddy76@outlook.com,8876543223,8876543223,Anna University,Electrical,2nd Year,Machine Learning,December,Telangana,Amit Reddy - 8977665544,Kiran Reddy - 8977665545,Prof. Reddy - reddy@college.edu
+Vivaan Das,vivaan.das18@hotmail.com,8865432112,8865432112,Jadavpur University,Civil,4th Year,Embedded Systems,January,West Bengal,Sneha Das - 8966554433,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel63@gmail.com,8854321001,8854321001,COEP Pune,Computer Science,1st Year,Web Development,May,Gujarat,Rohan Patel - 8955443322,Rahul Patel - 8955443323,Prof. Patel - patel@college.edu
+Aarav Nair,aarav.nair29@yahoo.com,8843210990,8843210990,SRM University,Electronics & Communication,3rd Year,IoT,June,Kerala,Ananya Nair - 8944332211,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon84@gmail.com,8832109889,8832109889,Manipal Institute of Technology,Chemical,4th Year,Cybersecurity,July,Kerala,Aarav Menon - 8933221100,Diya Menon - 8933221101,Prof. Menon - menon@college.edu
+Rahul Kumar,rahul.kumar51@hotmail.com,8821098778,8821098778,DTU Delhi,Aerospace,2nd Year,Cloud Computing,December,Delhi,Sneha Kumar - 8922110099,None,Prof. Kumar - kumar@college.edu
+Sneha Singh,sneha.singh96@outlook.com,8810987667,8810987667,IIT Bombay,Mechanical,4th Year,Artificial Intelligence,January,Punjab,Rohan Singh - 8911009988,Vivaan Singh - 8911009989,Prof. Singh - singh@college.edu
+Ananya Sharma,ananya.sharma43@gmail.com,8809876556,8809876556,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 8900998877,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma78@yahoo.com,8798765445,8798765445,BITS Pilani,Information Technology,3rd Year,Data Science,June,Delhi,Rahul Verma - 8899887766,Ananya Verma - 8899887767,Prof. Verma - verma@college.edu
+Kabir Gupta,kabir.gupta32@gmail.com,8787654334,8787654334,VIT Vellore,Electrical,4th Year,Machine Learning,July,Uttar Pradesh,Diya Gupta - 8888776655,None,Prof. Gupta - gupta@college.edu
+Sara Reddy,sara.reddy67@outlook.com,8776543223,8776543223,Anna University,Civil,2nd Year,Embedded Systems,December,Telangana,Amit Reddy - 8877665544,Kiran Reddy - 8877665545,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das14@hotmail.com,8765432112,8765432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 8866554433,None,Prof. Das - das@college.edu
+Ira Patel,ira.patel85@gmail.com,8754321001,8754321001,COEP Pune,Electronics & Communication,1st Year,IoT,May,Gujarat,Rohan Patel - 8855443322,Rahul Patel - 8855443323,Prof. Patel - patel@college.edu
+Aditya Nair,aditya.nair39@yahoo.com,8743210990,8743210990,SRM University,Chemical,3rd Year,Cybersecurity,June,Kerala,Ananya Nair - 8844332211,None,Prof. Nair - nair@college.edu
+Kavya Menon,kavya.menon72@gmail.com,8732109889,8732109889,Manipal Institute of Technology,Aerospace,4th Year,Cloud Computing,July,Kerala,Aarav Menon - 8833221100,Diya Menon - 8833221101,Prof. Menon - menon@college.edu
+Arjun Kumar,arjun.kumar26@hotmail.com,8721098778,8721098778,DTU Delhi,Mechanical,2nd Year,Artificial Intelligence,December,Delhi,Sneha Kumar - 8822110099,None,Prof. Kumar - kumar@college.edu
+Myra Singh,myra.singh58@outlook.com,8710987667,8710987667,IIT Delhi,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 8811009988,Vivaan Singh - 8811009989,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma93@gmail.com,8709876556,8709876556,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Rajasthan,Priya Sharma - 8800998877,None,Prof. Sharma - sharma@college.edu
+Diya Verma,diya.verma47@yahoo.com,8698765445,8698765445,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Rahul Verma - 8799887766,Ananya Verma - 8799887767,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta81@gmail.com,8687654334,8687654334,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Uttar Pradesh,Diya Gupta - 8788776655,None,Prof. Gupta - gupta@college.edu
+Riya Reddy,riya.reddy35@outlook.com,8676543223,8676543223,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,Telangana,Amit Reddy - 8777665544,Kiran Reddy - 8777665545,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das69@hotmail.com,8665432112,8665432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 8766554433,None,Prof. Das - das@college.edu
+Sneha Patel,sneha.patel24@gmail.com,8654321001,8654321001,COEP Pune,Information Technology,1st Year,Data Science,May,Gujarat,Rohan Patel - 8755443322,Rahul Patel - 8755443323,Prof. Patel - patel@college.edu
+Ananya Nair,ananya.nair57@yahoo.com,8643210990,8643210990,SRM University,Electrical,3rd Year,Machine Learning,June,Kerala,Aarav Nair - 8744332211,None,Prof. Nair - nair@college.edu
+Vihaan Menon,vihaan.menon92@gmail.com,8632109889,8632109889,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Kerala,Diya Menon - 8733221100,Aarav Menon - 8733221101,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar41@hotmail.com,8621098778,8621098778,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 8722110099,None,Prof. Kumar - kumar@college.edu
+Sara Singh,sara.singh76@outlook.com,8610987667,8610987667,IIT Delhi,Electronics & Communication,4th Year,IoT,January,Punjab,Rohan Singh - 8711009988,Vivaan Singh - 8711009989,Prof. Singh - singh@college.edu
+Rohan Sharma,rohan.sharma18@gmail.com,8609876556,8609876556,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Priya Sharma - 8700998877,None,Prof. Sharma - sharma@college.edu
+Pooja Verma,pooja.verma63@yahoo.com,8598765445,8598765445,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Delhi,Rahul Verma - 8699887766,Ananya Verma - 8699887767,Prof. Verma - verma@college.edu
+Aditya Gupta,aditya.gupta29@gmail.com,8587654334,8587654334,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,Uttar Pradesh,Diya Gupta - 8688776655,None,Prof. Gupta - gupta@college.edu
+Ishaan Reddy,ishaan.reddy84@outlook.com,8576543223,8576543223,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 8677665544,Kiran Reddy - 8677665545,Prof. Reddy - reddy@college.edu
+Kavya Das,kavya.das51@hotmail.com,8565432112,8565432112,Jadavpur University,Information Technology,4th Year,Data Science,January,West Bengal,Sneha Das - 8666554433,None,Prof. Das - das@college.edu
+Arjun Patel,arjun.patel96@gmail.com,8554321001,8554321001,COEP Pune,Electrical,1st Year,Machine Learning,May,Gujarat,Rohan Patel - 8655443322,Rahul Patel - 8655443323,Prof. Patel - patel@college.edu
+Myra Nair,myra.nair43@yahoo.com,8543210990,8543210990,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Aarav Nair - 8644332211,None,Prof. Nair - nair@college.edu
+Vivaan Menon,vivaan.menon78@gmail.com,8532109889,8532109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Diya Menon - 8633221100,Aarav Menon - 8633221101,Prof. Menon - menon@college.edu
+Diya Kumar,diya.kumar32@hotmail.com,8521098778,8521098778,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Delhi,Sneha Kumar - 8622110099,None,Prof. Kumar - kumar@college.edu
+Aarav Singh,aarav.singh67@outlook.com,8510987667,8510987667,IIT Bombay,Chemical,4th Year,Cybersecurity,January,Punjab,Rohan Singh - 8611009988,Vivaan Singh - 8611009989,Prof. Singh - singh@college.edu
+Riya Sharma,riya.sharma14@gmail.com,8509876556,8509876556,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Rajasthan,Priya Sharma - 8600998877,None,Prof. Sharma - sharma@college.edu
+Rahul Verma,rahul.verma85@yahoo.com,8498765445,8498765445,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Delhi,Rahul Verma - 8599887766,Ananya Verma - 8599887767,Prof. Verma - verma@college.edu
+Sneha Gupta,sneha.gupta39@gmail.com,8487654334,8487654334,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 8588776655,None,Prof. Gupta - gupta@college.edu
+Ananya Reddy,ananya.reddy72@outlook.com,8476543223,8476543223,Anna University,Information Technology,2nd Year,Data Science,December,Telangana,Amit Reddy - 8577665544,Kiran Reddy - 8577665545,Prof. Reddy - reddy@college.edu
+Vihaan Das,vihaan.das26@hotmail.com,8465432112,8465432112,Jadavpur University,Electrical,4th Year,Machine Learning,January,West Bengal,Sneha Das - 8566554433,None,Prof. Das - das@college.edu
+Kabir Patel,kabir.patel58@gmail.com,8454321001,8454321001,COEP Pune,Civil,1st Year,Embedded Systems,May,Gujarat,Rohan Patel - 8555443322,Rahul Patel - 8555443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair93@yahoo.com,8443210990,8443210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Aarav Nair - 8544332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon47@gmail.com,8432109889,8432109889,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Diya Menon - 8533221100,Aarav Menon - 8533221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar81@hotmail.com,8421098778,8421098778,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Delhi,Sneha Kumar - 8522110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh35@outlook.com,8410987667,8410987667,IIT Delhi,Aerospace,4th Year,Cloud Computing,January,Punjab,Rohan Singh - 8511009988,Vivaan Singh - 8511009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma69@gmail.com,8409876556,8409876556,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Rajasthan,Priya Sharma - 8500998877,None,Prof. Sharma - sharma@college.edu
+Kavya Verma,kavya.verma24@yahoo.com,8398765445,8398765445,BITS Pilani,Computer Science,3rd Year,Web Development,June,Delhi,Rahul Verma - 8499887766,Ananya Verma - 8499887767,Prof. Verma - verma@college.edu
+Arjun Gupta,arjun.gupta57@gmail.com,8387654334,8387654334,VIT Vellore,Information Technology,4th Year,Data Science,July,Uttar Pradesh,Diya Gupta - 8488776655,None,Prof. Gupta - gupta@college.edu
+Myra Reddy,myra.reddy92@outlook.com,8376543223,8376543223,Anna University,Electrical,2nd Year,Machine Learning,December,Telangana,Amit Reddy - 8477665544,Kiran Reddy - 8477665545,Prof. Reddy - reddy@college.edu
+Vivaan Das,vivaan.das41@hotmail.com,8365432112,8365432112,Jadavpur University,Civil,4th Year,Embedded Systems,January,West Bengal,Sneha Das - 8466554433,None,Prof. Das - das@college.edu
+Diya Patel,diya.patel76@gmail.com,8354321001,8354321001,COEP Pune,Computer Science,1st Year,Web Development,May,Gujarat,Rohan Patel - 8455443322,Rahul Patel - 8455443323,Prof. Patel - patel@college.edu
+Aarav Nair,aarav.nair18@yahoo.com,8343210990,8343210990,SRM University,Electronics & Communication,3rd Year,IoT,June,Kerala,Ananya Nair - 8444332211,None,Prof. Nair - nair@college.edu
+Riya Menon,riya.menon63@gmail.com,8332109889,8332109889,Manipal Institute of Technology,Chemical,4th Year,Cybersecurity,July,Kerala,Aarav Menon - 8433221100,Diya Menon - 8433221101,Prof. Menon - menon@college.edu
+Rahul Kumar,rahul.kumar29@hotmail.com,8321098778,8321098778,DTU Delhi,Aerospace,2nd Year,Cloud Computing,December,Delhi,Sneha Kumar - 8422110099,None,Prof. Kumar - kumar@college.edu
+Sneha Singh,sneha.singh84@outlook.com,8310987667,8310987667,IIT Bombay,Mechanical,4th Year,Artificial Intelligence,January,Punjab,Rohan Singh - 8411009988,Vivaan Singh - 8411009989,Prof. Singh - singh@college.edu
+Ananya Sharma,ananya.sharma51@gmail.com,8309876556,8309876556,NIT Trichy,Computer Science,1st Year,Web Development,May,Rajasthan,Priya Sharma - 8400998877,None,Prof. Sharma - sharma@college.edu
+Vihaan Verma,vihaan.verma96@yahoo.com,8298765445,8298765445,BITS Pilani,Information Technology,3rd Year,Data Science,June,Delhi,Rahul Verma - 8399887766,Ananya Verma - 8399887767,Prof. Verma - verma@college.edu
+Kabir Gupta,kabir.gupta43@gmail.com,8287654334,8287654334,VIT Vellore,Electrical,4th Year,Machine Learning,July,Uttar Pradesh,Diya Gupta - 8388776655,None,Prof. Gupta - gupta@college.edu
+Sara Reddy,sara.reddy78@outlook.com,8276543223,8276543223,Anna University,Civil,2nd Year,Embedded Systems,December,Telangana,Amit Reddy - 8377665544,Kiran Reddy - 8377665545,Prof. Reddy - reddy@college.edu
+Rohan Das,rohan.das32@hotmail.com,8265432112,8265432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 8366554433,None,Prof. Das - das@college.edu
+Ira Patel,ira.patel67@gmail.com,8254321001,8254321001,COEP Pune,Electronics & Communication,1st Year,IoT,May,Gujarat,Rohan Patel - 8355443322,Rahul Patel - 8355443323,Prof. Patel - patel@college.edu
+Aditya Nair,aditya.nair14@yahoo.com,8243210990,8243210990,SRM University,Chemical,3rd Year,Cybersecurity,June,Kerala,Ananya Nair - 8344332211,None,Prof. Nair - nair@college.edu
+Kavya Menon,kavya.menon85@gmail.com,8232109889,8232109889,Manipal Institute of Technology,Aerospace,4th Year,Cloud Computing,July,Kerala,Aarav Menon - 8333221100,Diya Menon - 8333221101,Prof. Menon - menon@college.edu
+Arjun Kumar,arjun.kumar39@hotmail.com,8221098778,8221098778,DTU Delhi,Mechanical,2nd Year,Artificial Intelligence,December,Delhi,Sneha Kumar - 8322110099,None,Prof. Kumar - kumar@college.edu
+Myra Singh,myra.singh72@outlook.com,8210987667,8210987667,IIT Delhi,Computer Science,4th Year,Web Development,January,Punjab,Rohan Singh - 8311009988,Vivaan Singh - 8311009989,Prof. Singh - singh@college.edu
+Vivaan Sharma,vivaan.sharma26@gmail.com,8209876556,8209876556,NIT Trichy,Electronics & Communication,1st Year,IoT,May,Rajasthan,Priya Sharma - 8300998877,None,Prof. Sharma - sharma@college.edu
+Diya Verma,diya.verma58@yahoo.com,8198765445,8198765445,BITS Pilani,Chemical,3rd Year,Cybersecurity,June,Delhi,Rahul Verma - 8299887766,Ananya Verma - 8299887767,Prof. Verma - verma@college.edu
+Aarav Gupta,aarav.gupta93@gmail.com,8187654334,8187654334,VIT Vellore,Aerospace,4th Year,Cloud Computing,July,Uttar Pradesh,Diya Gupta - 8288776655,None,Prof. Gupta - gupta@college.edu
+Riya Reddy,riya.reddy47@outlook.com,8176543223,8176543223,Anna University,Mechanical,2nd Year,Artificial Intelligence,December,Telangana,Amit Reddy - 8277665544,Kiran Reddy - 8277665545,Prof. Reddy - reddy@college.edu
+Rahul Das,rahul.das81@hotmail.com,8165432112,8165432112,Jadavpur University,Computer Science,4th Year,Web Development,January,West Bengal,Sneha Das - 8266554433,None,Prof. Das - das@college.edu
+Sneha Patel,sneha.patel35@gmail.com,8154321001,8154321001,COEP Pune,Information Technology,1st Year,Data Science,May,Gujarat,Rohan Patel - 8255443322,Rahul Patel - 8255443323,Prof. Patel - patel@college.edu
+Ananya Nair,ananya.nair69@yahoo.com,8143210990,8143210990,SRM University,Electrical,3rd Year,Machine Learning,June,Kerala,Aarav Nair - 8244332211,None,Prof. Nair - nair@college.edu
+Vihaan Menon,vihaan.menon24@gmail.com,8132109889,8132109889,Manipal Institute of Technology,Civil,4th Year,Embedded Systems,July,Kerala,Diya Menon - 8233221100,Aarav Menon - 8233221101,Prof. Menon - menon@college.edu
+Kabir Kumar,kabir.kumar57@hotmail.com,8121098778,8121098778,DTU Delhi,Computer Science,2nd Year,Web Development,December,Delhi,Sneha Kumar - 8222110099,None,Prof. Kumar - kumar@college.edu
+Sara Singh,sara.singh92@outlook.com,8110987667,8110987667,IIT Delhi,Electronics & Communication,4th Year,IoT,January,Punjab,Rohan Singh - 8211009988,Vivaan Singh - 8211009989,Prof. Singh - singh@college.edu
+Rohan Sharma,rohan.sharma41@gmail.com,8109876556,8109876556,NIT Trichy,Chemical,1st Year,Cybersecurity,May,Rajasthan,Priya Sharma - 8200998877,None,Prof. Sharma - sharma@college.edu
+Pooja Verma,pooja.verma76@yahoo.com,8098765445,8098765445,BITS Pilani,Aerospace,3rd Year,Cloud Computing,June,Delhi,Rahul Verma - 8199887766,Ananya Verma - 8199887767,Prof. Verma - verma@college.edu
+Aditya Gupta,aditya.gupta18@gmail.com,8087654334,8087654334,VIT Vellore,Mechanical,4th Year,Artificial Intelligence,July,Uttar Pradesh,Diya Gupta - 8188776655,None,Prof. Gupta - gupta@college.edu
+Ishaan Reddy,ishaan.reddy63@outlook.com,8076543223,8076543223,Anna University,Computer Science,2nd Year,Web Development,December,Telangana,Amit Reddy - 8177665544,Kiran Reddy - 8177665545,Prof. Reddy - reddy@college.edu
+Kavya Das,kavya.das29@hotmail.com,8065432112,8065432112,Jadavpur University,Information Technology,4th Year,Data Science,January,West Bengal,Sneha Das - 8166554433,None,Prof. Das - das@college.edu
+Arjun Patel,arjun.patel84@gmail.com,8054321001,8054321001,COEP Pune,Electrical,1st Year,Machine Learning,May,Gujarat,Rohan Patel - 8155443322,Rahul Patel - 8155443323,Prof. Patel - patel@college.edu
+Myra Nair,myra.nair51@yahoo.com,8043210990,8043210990,SRM University,Civil,3rd Year,Embedded Systems,June,Kerala,Aarav Nair - 8144332211,None,Prof. Nair - nair@college.edu
+Vivaan Menon,vivaan.menon96@gmail.com,8032109889,8032109889,Manipal Institute of Technology,Computer Science,4th Year,Web Development,July,Kerala,Diya Menon - 8133221100,Aarav Menon - 8133221101,Prof. Menon - menon@college.edu
+Diya Kumar,diya.kumar43@hotmail.com,8021098778,8021098778,DTU Delhi,Electronics & Communication,2nd Year,IoT,December,Delhi,Sneha Kumar - 8122110099,None,Prof. Kumar - kumar@college.edu
+Aarav Singh,aarav.singh78@outlook.com,8010987667,8010987667,IIT Bombay,Chemical,4th Year,Cybersecurity,January,Punjab,Rohan Singh - 8111009988,Vivaan Singh - 8111009989,Prof. Singh - singh@college.edu
+Riya Sharma,riya.sharma32@gmail.com,8009876556,8009876556,NIT Trichy,Aerospace,1st Year,Cloud Computing,May,Rajasthan,Priya Sharma - 8100998877,None,Prof. Sharma - sharma@college.edu
+Rahul Verma,rahul.verma67@yahoo.com,7998765445,7998765445,BITS Pilani,Mechanical,3rd Year,Artificial Intelligence,June,Delhi,Rahul Verma - 8099887766,Ananya Verma - 8099887767,Prof. Verma - verma@college.edu
+Sneha Gupta,sneha.gupta14@gmail.com,7987654334,7987654334,VIT Vellore,Computer Science,4th Year,Web Development,July,Uttar Pradesh,Diya Gupta - 8088776655,None,Prof. Gupta - gupta@college.edu
+Ananya Reddy,ananya.reddy85@outlook.com,7976543223,7976543223,Anna University,Information Technology,2nd Year,Data Science,December,Telangana,Amit Reddy - 8077665544,Kiran Reddy - 8077665545,Prof. Reddy - reddy@college.edu
+Vihaan Das,vihaan.das39@hotmail.com,7965432112,7965432112,Jadavpur University,Electrical,4th Year,Machine Learning,January,West Bengal,Sneha Das - 8066554433,None,Prof. Das - das@college.edu
+Kabir Patel,kabir.patel72@gmail.com,7954321001,7954321001,COEP Pune,Civil,1st Year,Embedded Systems,May,Gujarat,Rohan Patel - 8055443322,Rahul Patel - 8055443323,Prof. Patel - patel@college.edu
+Sara Nair,sara.nair26@yahoo.com,7943210990,7943210990,SRM University,Computer Science,3rd Year,Web Development,June,Kerala,Aarav Nair - 8044332211,None,Prof. Nair - nair@college.edu
+Rohan Menon,rohan.menon58@gmail.com,7932109889,7932109889,Manipal Institute of Technology,Electronics & Communication,4th Year,IoT,July,Kerala,Diya Menon - 8033221100,Aarav Menon - 8033221101,Prof. Menon - menon@college.edu
+Pooja Kumar,pooja.kumar93@hotmail.com,7921098778,7921098778,DTU Delhi,Chemical,2nd Year,Cybersecurity,December,Delhi,Sneha Kumar - 8022110099,None,Prof. Kumar - kumar@college.edu
+Aditya Singh,aditya.singh47@outlook.com,7910987667,7910987667,IIT Delhi,Aerospace,4th Year,Cloud Computing,January,Punjab,Rohan Singh - 8011009988,Vivaan Singh - 8011009989,Prof. Singh - singh@college.edu
+Ishaan Sharma,ishaan.sharma81@gmail.com,7909876556,7909876556,NIT Trichy,Mechanical,1st Year,Artificial Intelligence,May,Rajas
