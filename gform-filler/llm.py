@@ -6,8 +6,10 @@ from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
 try:
     from llama_cpp import Llama
-except Exception:  # pragma: no cover
+    LLAMA_AVAILABLE = True
+except ImportError:  # pragma: no cover - depends on the optional package
     Llama = None
+    LLAMA_AVAILABLE = False
 
 
 def normalize_header(value: str) -> str:
@@ -158,6 +160,8 @@ def _fallback_generate_csv(questions: Sequence[Dict[str, object]], row_count: in
 
 def generate_demo_csv(questions: Sequence[Dict[str, object]], row_count: int, output_path: str = "./responses/_generated.csv") -> str:
     """Generate demo CSV data with a local GGUF model when available, otherwise use a deterministic fallback."""
+    if not LLAMA_AVAILABLE:
+        raise RuntimeError("llama-cpp-python is not installed. Install it with: pip install llama-cpp-python>=0.3")
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
     expected_headers = [str(q["title"]) for q in questions]
     prompt = _build_prompt(questions, row_count)
@@ -173,9 +177,10 @@ def generate_demo_csv(questions: Sequence[Dict[str, object]], row_count: int, ou
             model_path = candidate
             break
 
-    if model_path is None or Llama is None:
+    if model_path is None:
         return _fallback_generate_csv(questions, row_count, output_path)
 
+    # The availability check above guarantees that this optional dependency exists.
     llm = Llama(model_path=model_path, n_ctx=4096, n_batch=256, verbose=False, n_gpu_layers=0)
     attempts = 0
     survivors: List[List[str]] = []

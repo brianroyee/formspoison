@@ -42,7 +42,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 COPY requirements.txt ./requirements.txt
 RUN python -m pip install --upgrade pip && python -m pip install --no-cache-dir -r requirements.txt
-RUN python -m playwright install chromium
+RUN python -m playwright install chromium && python -m playwright install-deps chromium
 
 COPY . .
 RUN mkdir -p /app/models /app/responses && chmod +x /app/docker-entrypoint.sh

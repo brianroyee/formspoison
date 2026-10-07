@@ -1,6 +1,7 @@
 import csv
 import os
 import re
+import time
 from typing import Callable, Dict, Iterable, List, Optional, Tuple
 
 from playwright.sync_api import sync_playwright
@@ -109,7 +110,22 @@ def _fill_question(page, question: Dict[str, object], value: str) -> None:
             click_choice(page, "checkbox", token)
 
 
-def run_submission(form_url: str, questions: List[Dict[str, object]], csv_path: str, log_callback: Optional[Callable[[str], None]] = None) -> Dict[str, int]:
+def _submission_delay(delay: Optional[float]) -> float:
+    """Return a non-negative per-submission delay from an argument or environment."""
+    raw_delay = str(delay) if delay is not None else os.environ.get("GFORM_SUBMIT_DELAY", "1.5")
+    try:
+        return max(0.0, float(raw_delay))
+    except ValueError:
+        raise ValueError("Submission delay must be a non-negative number of seconds.")
+
+
+def run_submission(
+    form_url: str,
+    questions: List[Dict[str, object]],
+    csv_path: str,
+    log_callback: Optional[Callable[[str], None]] = None,
+    delay: Optional[float] = None,
+) -> Dict[str, int]:
     if not os.path.exists(csv_path):
         raise FileNotFoundError(f"CSV not found: {csv_path}")
 
@@ -120,11 +136,16 @@ def run_submission(form_url: str, questions: List[Dict[str, object]], csv_path: 
     matched_questions = [q for q in questions if q.get("col")]
     success = 0
     failed = 0
+    submit_delay = _submission_delay(delay)
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=os.environ.get("FORM_FILLER_HEADLESS", "0").strip().lower() in {"1", "true", "yes", "on"})
         try:
             for index, row in enumerate(rows, start=1):
+                if index > 1 and submit_delay > 0:
+                    if log_callback:
+                        log_callback(f"Waiting {submit_delay:g}s before next submission…")
+                    time.sleep(submit_delay)
                 name = _safe_row_name(row, matched_questions)
                 if log_callback:
                     log_callback(f"Row {index}: {name}")

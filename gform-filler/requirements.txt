@@ -1,2 +1,6 @@
 textual>=0.60
 playwright>=1.40
+
+# Optional — required only for the local LLM demo-data generator (llm.py).
+# Install with:  pip install llama-cpp-python>=0.3
+# llama-cpp-python>=0.3

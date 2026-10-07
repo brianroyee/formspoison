@@ -118,7 +118,7 @@ def parse_form_schema(form_html: str) -> List[Dict[str, Any]]:
             "entry": int(entry_id),
             "type": int(type_code),
             "type_name": TYPE_NAMES.get(int(type_code), f"type_{type_code}"),
-            "col": "",
+            "col": None,
             "required": required,
             "options": options,
         }
