@@ -8,10 +8,10 @@ from playwright.sync_api import sync_playwright
 TYPE_NAMES = {
     0: "short text",
     1: "paragraph",
-    2: "multiple choice",
+    2: "MCQ",
     3: "dropdown",
     4: "checkboxes",
-    5: "linear scale",
+    5: "scale",
     9: "date",
     10: "time",
 }

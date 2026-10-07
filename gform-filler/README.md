@@ -1,118 +1,65 @@
 # gform-filler
 
-`gform-filler` is a terminal tool that reads a public Google Form, maps CSV rows to its fields, and submits one response per row through Chromium and Playwright. Use it only for forms you are authorized to submit.
+`gform-filler` is a terminal user interface for entering one response per CSV row into a public Google Form using Playwright. Use it only with forms you own or are authorized to submit to.
 
-The tool is intentionally named plainly: gform-filler.
+## Installation
 
-## What it does
-
-- Parses a public Google Form and extracts question titles, types, and entry IDs.
-- Maps CSV headers to question titles using punctuation-insensitive matching.
-- Offers a Textual TUI and a plain CLI mode.
-- Uses a real Playwright browser for submissions, with configurable pacing.
-- Optionally generates demo data through a local GGUF model.
-
-## Local setup
+From the `gform-filler` directory:
 
 ```bash
-# System dependencies (Linux)
-sudo apt-get update
-sudo apt-get install -y python3-venv xvfb
-
-# Python environment
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-
-# Playwright browser + system libraries
+pip install -e .
 playwright install chromium
-playwright install-deps chromium   # required on Linux VMs / CI
-
-# Optional: enable the local LLM demo-data generator
-# pip install llama-cpp-python>=0.3
-# mkdir -p models
-# Place a quantized GGUF (e.g. AILO-152M-v2 q4_k_m) in ./models/
 ```
 
-On Windows, use WSL2 and run these inside the WSL shell. Do not mix PowerShell and bash in the same block.
+To install the test dependency as well:
 
-## Running
+```bash
+pip install -e ".[dev]"
+```
 
-Start the TUI:
+## Launch
+
+Run the app from a source checkout:
 
 ```bash
 python app.py
 ```
 
-Run without the TUI:
+After editable installation, launch it with:
 
 ```bash
-FORM_FILLER_HEADLESS=1 python app.py --no-tui \
-  --form-url "https://docs.google.com/forms/..." \
-  --csv ./responses/students.csv
+gform-filler
 ```
 
-The local LLM mode is optional. When `llama-cpp-python` is not installed, CSV filling still works and the TUI hides the LLM option.
+Both commands open the TUI directly. There is no submission command-line mode.
 
-## CLI reference
+## User Flow
 
-| Flag | Description |
-| --- | --- |
-| `--no-tui` | Run without the Textual interface (plain stdout). |
-| `--form-url URL` | Provide the form URL at launch (skips the input step). |
-| `--csv PATH` | Provide the responses CSV path. |
-| `--generate-demo N` | Generate N demo rows via the local LLM instead of reading a CSV. |
-| `--rows N` | Alias for `--generate-demo N`. |
-| `--allow-demo-submit` | Bypass the demo-data confirmation guard (dangerous; test forms only). |
-| `--delay SECONDS` | Wait this many seconds between submissions (default: 1.5; also configurable with `GFORM_SUBMIT_DELAY`). |
+1. Enter the Google Form URL. Accepted links are `forms.gle/...` and `docs.google.com/forms/d/e/.../viewform`.
+2. The app loads and parses the public form in a worker, then displays each question, entry ID, type, and required status. Forms that require sign-in or cannot be parsed show an in-app error.
+3. Enter a CSV path. The default is `responses.csv`. If the file does not exist, the app creates it with the question titles as headers and one blank row, shows its absolute path, and exits so it can be filled before restarting.
+4. For an existing CSV, the app checks the question-title headers and response rows, then shows the form, row count, CSV path, delay, and estimated pacing time. Missing question columns are listed and require confirmation before continuing.
+5. Start submission to see row progress and success/failure counts. Stop halts after the current row. On completion, the app displays totals and up to five row-specific failure messages. Choose Run again to start with another form.
 
-If Google starts throttling, increase `--delay`.
+## CSV Format
 
-## Docker
+- Save the file as UTF-8; UTF-8 with a byte-order mark is also accepted.
+- The first row must contain question titles. Headers are compared case-sensitively and punctuation-sensitively after trimming leading and trailing whitespace.
+- Extra columns are ignored. Missing form-question columns require confirmation and are left unanswered.
+- Blank cells are not submitted, and entirely blank rows are skipped.
+- For checkbox questions, separate selections in a cell with `|` or `;`.
+- Date answers must use `YYYY-MM-DD`; time answers must use `HH:MM`; scale answers must be numeric strings.
 
-The image installs `xvfb` and runs `playwright install-deps chromium`, so headless browser mode works in the container.
+## Form Access and Responsible Use
 
-### PowerShell (Windows host)
+Only public forms that can be opened without signing in are supported. The app does not bypass authentication, solve challenges, or bypass spam filters. It is intended for forms you own or are authorized to submit to. A delay of at least 1.0 second is required between responses; the default is 1.5 seconds with a small additional randomized wait.
 
-```powershell
-docker build -t gform-filler .
-docker run --rm -it `
-  -v ${PWD}/responses:/app/responses `
-  -v ${PWD}/models:/app/models `
-  -e FORM_FILLER_HEADLESS=1 `
-  gform-filler
-```
-
-### bash (Linux/macOS host)
-
-```bash
-docker build -t gform-filler .
-docker run --rm -it \
-  -v "$PWD/responses:/app/responses" \
-  -v "$PWD/models:/app/models" \
-  -e FORM_FILLER_HEADLESS=1 \
-  gform-filler
-```
-
-The `./models` mount is only needed for LLM mode. If you don't use it, omit that volume.
-
-## Safety and ethics
-
-- Only use on forms you are authorized to submit to.
-- Do not fabricate real respondent data.
-- The app does not bypass authentication or hidden protections.
-- Logs are intentionally limited and do not expose response values.
-- Generated demo data is for offline and dry-run testing only. Do not submit LLM-generated rows to a live form.
-
-For generated data, the TUI keeps **Start Auto-Fill** disabled until the offline-test confirmation is checked. CLI submissions of `_generated.csv` require `--allow-demo-submit`.
+Submission outcomes are appended to `submission_log.txt` in the working directory with a timestamp, row number, and status. Submitted values are not written to the log.
 
 ## Tests
 
-Install development requirements and run:
+Run the offline test suite with:
 
 ```bash
-pip install -r requirements-dev.txt
-pytest
+pytest -q
 ```
-
-Run tests with pytest.

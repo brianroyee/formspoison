@@ -1,313 +1,407 @@
-import argparse
-import csv
-import os
 import re
+import threading
+from pathlib import Path
 from typing import Any, Dict, List, Sequence
+from urllib.parse import urlsplit
 
 from textual import on, work
 from textual.app import App, ComposeResult
 from textual.containers import Horizontal, Vertical
-from textual.widgets import Button, Checkbox, DataTable, Footer, Input, Log, RadioButton, RadioSet, Static
+from textual.widgets import Button, DataTable, Footer, Input, ProgressBar, Static
 
-try:
-    from llm import LLAMA_AVAILABLE, generate_demo_csv
-
-    LLM_MODE_AVAILABLE = LLAMA_AVAILABLE
-except ImportError:  # Keep the CSV workflow usable if the optional module cannot load.
-    generate_demo_csv = None
-    LLM_MODE_AVAILABLE = False
-
+from csv_data import create_template_csv, read_response_csv
 from parser import fetch_form_html, parse_form_schema
 from submitter import run_submission
 
 
-def normalize_header(value: str) -> str:
-    """Normalize form titles and CSV headers for deterministic matching."""
-    return re.sub(r"[^a-z0-9]", "", str(value).lower())
+def is_valid_form_url(value: str) -> bool:
+    try:
+        parsed = urlsplit(value.strip())
+    except ValueError:
+        return False
 
-
-def map_question_columns(questions: Sequence[Dict[str, Any]], headers: Sequence[str]) -> int:
-    """Set each question's matching CSV column, or ``None`` when there is none."""
-    matched = 0
-    for question in questions:
-        question["col"] = None
-        title_norm = normalize_header(str(question["title"]))
-        match = next((header for header in headers if normalize_header(header) == title_norm), None)
-        if match is None:
-            match = next(
-                (
-                    header
-                    for header in headers
-                    if (header_norm := normalize_header(header)) and (title_norm in header_norm or header_norm in title_norm)
-                ),
-                None,
-            )
-        if match is not None:
-            question["col"] = match
-            matched += 1
-    return matched
+    if parsed.scheme not in {"http", "https"}:
+        return False
+    host = (parsed.hostname or "").lower()
+    path = parsed.path.rstrip("/")
+    if host == "forms.gle":
+        return bool(path.strip("/"))
+    return host == "docs.google.com" and bool(re.match(r"^/forms/d/e/[^/]+/viewform$", path))
 
 
 class GFormFiller(App):
     CSS = """
-    Screen { layout: vertical; padding: 1 2; background: #111827; color: #e5e7eb; }
-    #title { content-align: center middle; color: #f9fafb; text-style: bold; margin-bottom: 1; }
-    #subtitle { color: #9ca3af; content-align: center middle; margin-bottom: 1; }
-    #question_table { height: 12; min-height: 8; margin-top: 1; }
-    #log_panel { height: 8; min-height: 5; background: #0f172a; color: #dbeafe; }
-    #llm_controls, #demo_confirmation { height: auto; margin-top: 1; }
-    Horizontal { layout: horizontal; width: 100%; }
-    Input { width: 1fr; background: #1f2937; color: #f9fafb; }
-    Button { margin: 0 0 0 1; background: #2563eb; color: white; }
-    Button.-primary { background: #2563eb; }
-    Button.-success { background: #16a34a; }
-    #start_submit { width: 100%; margin-top: 1; }
+    Screen { layout: vertical; padding: 1 2; }
+    #banner { content-align: center middle; text-style: bold; height: 3; }
+    #subtitle { content-align: center middle; color: $text-muted; height: 2; }
+    .stage { height: 1fr; }
+    .stage-title { text-style: bold; margin-bottom: 1; }
+    .field-label { margin-top: 1; }
+    .message { height: auto; min-height: 1; margin-top: 1; }
+    .actions { height: 3; margin-top: 1; }
+    .actions Button { margin-right: 1; }
+    Input { width: 1fr; }
+    #question_table { height: 1fr; min-height: 8; margin-top: 1; }
+    #progress_bar { margin: 1 0; }
+    #failure_summary { height: 1fr; overflow-y: auto; }
     """
 
     BINDINGS = [("q", "quit", "Quit")]
 
-    def __init__(self, allow_demo_submit: bool = False) -> None:
+    def __init__(self) -> None:
         super().__init__()
-        self.allow_demo_submit = allow_demo_submit
-        self.form_url = "https://docs.google.com/forms/d/e/1FAIpQLScF_r0L_eCY-6LHj-1UBHTbKpU4PROhQV13NcoOOprn0UAvXw/viewform"
+        self.form_url = ""
         self.questions: List[Dict[str, Any]] = []
-        self.csv_path = "./responses/students.csv"
-        self.current_csv_rows: List[Dict[str, str]] = []
-        self.current_status = "Ready"
-        self.matched_question_count = 0
-        self.llm_mode_active = False
+        self.csv_path = ""
+        self.csv_rows: List[Dict[str, str]] = []
+        self.missing_headers: List[str] = []
+        self.cancel_event = threading.Event()
+        self.last_result: Dict[str, Any] = {}
 
     def compose(self) -> ComposeResult:
-        yield Static("gform-filler", id="title")
-        yield Static("Google Form response orchestrator for bulk data entry", id="subtitle")
-        yield Input(placeholder="Paste Google Form URL here…", value=self.form_url, id="form_url")
-        with Horizontal():
-            yield Input(value="./responses", id="folder_path")
-            yield Button("Scan Folder", id="scan_folder")
-        yield Button("1. Fetch & Analyze Form", id="fetch_form", variant="primary")
-        table = DataTable(id="question_table")
-        table.add_columns("Question", "Entry ID", "Type", "CSV Column")
-        yield table
-        yield Static("Ready", id="status")
-        yield Log(id="log_panel")
-        with RadioSet(id="mode_selector"):
-            yield RadioButton("Load from CSV", value=True, id="mode_csv")
-            if LLM_MODE_AVAILABLE:
-                yield RadioButton("Generate with LLM", id="mode_llm")
-        with Vertical(id="llm_controls"):
-            yield Input(value="5", id="llm_rows")
-            yield Button("Generate", id="generate_rows")
-        yield Checkbox(
-            "I confirm this data is for offline testing only and I will not submit it to a live form",
-            id="demo_submit_confirmation",
-        )
-        yield Button("2. Start Auto-Fill", id="start_submit", variant="success", disabled=True)
+        yield Static("gform-filler", id="banner")
+        yield Static("Authorized Google Forms response entry", id="subtitle")
+
+        with Vertical(id="step_form", classes="stage"):
+            yield Static("1 / Form URL", classes="stage-title")
+            yield Static("Google Form URL", classes="field-label")
+            yield Input(placeholder="https://docs.google.com/forms/d/e/.../viewform", id="form_url")
+            yield Static("", id="form_error", classes="message")
+            with Horizontal(classes="actions"):
+                yield Button("Next", id="form_next", variant="primary")
+
+        with Vertical(id="step_questions", classes="stage"):
+            yield Static("2 / Scan questions", classes="stage-title")
+            yield Static("Fetching the form...", id="fetch_status", classes="message")
+            yield DataTable(id="question_table")
+            yield Static("", id="question_error", classes="message")
+            with Horizontal(classes="actions"):
+                yield Button("Back", id="questions_back")
+                yield Button("Next", id="questions_next", variant="primary", disabled=True)
+
+        with Vertical(id="step_csv", classes="stage"):
+            yield Static("3 / CSV file", classes="stage-title")
+            yield Static("CSV file path", classes="field-label")
+            yield Input(value="responses.csv", id="csv_path")
+            yield Static("", id="csv_message", classes="message")
+            with Horizontal(classes="actions"):
+                yield Button("Back", id="csv_back")
+                yield Button("Load CSV", id="csv_load", variant="primary")
+                yield Button("Proceed with missing columns", id="confirm_missing", variant="warning")
+                yield Button("Exit", id="template_exit")
+
+        with Vertical(id="step_confirm", classes="stage"):
+            yield Static("4 / Confirm and configure", classes="stage-title")
+            yield Static("", id="submission_summary", classes="message")
+            yield Static("Delay between submissions (seconds, minimum 1.0)", classes="field-label")
+            yield Input(value="1.5", id="delay_input", type="number")
+            yield Static("", id="estimate", classes="message")
+            yield Static("", id="delay_error", classes="message")
+            with Horizontal(classes="actions"):
+                yield Button("Back", id="confirm_back")
+                yield Button("Start", id="submission_start", variant="success")
+
+        with Vertical(id="step_progress", classes="stage"):
+            yield Static("5 / Submission progress", classes="stage-title")
+            yield ProgressBar(total=1, id="progress_bar", show_eta=False)
+            yield Static("Success: 0  Failed: 0", id="live_counts", classes="message")
+            yield Static("Preparing...", id="current_row", classes="message")
+            with Horizontal(classes="actions"):
+                yield Button("Stop", id="submission_stop", variant="error")
+
+        with Vertical(id="step_result", classes="stage"):
+            yield Static("Submission summary", classes="stage-title")
+            yield Static("", id="result_counts", classes="message")
+            yield Static("", id="failure_summary")
+            with Horizontal(classes="actions"):
+                yield Button("Run again", id="run_again", variant="primary")
+                yield Button("Exit", id="result_exit")
+
         yield Footer()
 
     def on_mount(self) -> None:
-        self._llm_controls_visible(False)
-        self._demo_confirmation_visible(False)
-        self.log_event("App started. Paste a public Google Form URL to begin.")
-        if not LLM_MODE_AVAILABLE:
-            self.log_event("LLM mode unavailable (llama-cpp-python not installed).")
-        self._update_status("Paste a Google Form URL to begin")
+        self.query_one("#confirm_missing", Button).display = False
+        self.query_one("#template_exit", Button).display = False
+        self.query_one("#step_questions", Vertical).display = False
+        self.query_one("#step_csv", Vertical).display = False
+        self.query_one("#step_confirm", Vertical).display = False
+        self.query_one("#step_progress", Vertical).display = False
+        self.query_one("#step_result", Vertical).display = False
+        self._show_stage("step_form")
         self.call_after_refresh(lambda: self.query_one("#form_url", Input).focus())
 
-    def _llm_controls_visible(self, visible: bool) -> None:
-        self.query_one("#llm_controls", Vertical).display = visible
+    def _show_stage(self, stage_id: str) -> None:
+        for candidate in ("step_form", "step_questions", "step_csv", "step_confirm", "step_progress", "step_result"):
+            self.query_one(f"#{candidate}", Vertical).display = candidate == stage_id
 
-    def _demo_confirmation_visible(self, visible: bool) -> None:
-        self.query_one("#demo_submit_confirmation", Checkbox).display = visible
+    def _show_error(self, target: str, message: str) -> None:
+        self.query_one(f"#{target}", Static).update(message)
 
-    def _is_demo_data(self) -> bool:
-        return self.llm_mode_active or self.csv_path.endswith("_generated.csv")
+    @on(Input.Submitted, "#form_url")
+    def form_url_submitted(self) -> None:
+        self.advance_from_form()
 
-    def _demo_submission_confirmed(self) -> bool:
-        return self.allow_demo_submit or self.query_one("#demo_submit_confirmation", Checkbox).value
+    @on(Button.Pressed, "#form_next")
+    def form_next_pressed(self) -> None:
+        self.advance_from_form()
 
-    def _refresh_submit_button(self) -> None:
-        requires_confirmation = self._is_demo_data()
-        self._demo_confirmation_visible(requires_confirmation and not self.allow_demo_submit)
-        enabled = self.matched_question_count > 0 and (not requires_confirmation or self._demo_submission_confirmed())
-        self.query_one("#start_submit", Button).disabled = not enabled
-
-    def _update_status(self, text: str) -> None:
-        self.current_status = text
-        self.query_one("#status", Static).update(text)
-
-    def log_event(self, message: str) -> None:
-        self.query_one("#log_panel", Log).write(message)
-
-    @on(Button.Pressed, "#scan_folder")
-    def handle_scan_folder(self) -> None:
-        folder = self.query_one("#folder_path", Input).value.strip() or "./responses"
-        self._scan_folder(folder)
-
-    @work(thread=True)
-    def _scan_folder(self, folder: str) -> None:
-        try:
-            matches = sorted(os.path.join(folder, name) for name in os.listdir(folder) if name.lower().endswith(".csv")) if os.path.isdir(folder) else []
-            if not matches:
-                self.call_from_thread(self._update_status, "No CSV files found.")
-                self.call_from_thread(self.log_event, "No CSV files found in folder.")
-                return
-            self.call_from_thread(self._map_csv_to_questions, matches[0])
-        except Exception as exc:  # pragma: no cover
-            self.call_from_thread(self.log_event, f"Scan failed: {exc}")
-            self.call_from_thread(self._update_status, "CSV scan failed.")
-
-    def _map_csv_to_questions(self, csv_path: str) -> None:
-        self.csv_path = csv_path
-        if not self.questions:
-            self._update_status("Analyze a form before scanning CSV.")
-            return
-        with open(csv_path, newline="", encoding="utf-8-sig") as handle:
-            reader = csv.DictReader(handle)
-            self.current_csv_rows = list(reader)
-            headers = reader.fieldnames or []
-        self.matched_question_count = map_question_columns(self.questions, headers)
-        self._update_status(f"Matched {self.matched_question_count}/{len(self.questions)} questions to columns")
-        self.log_event(f"Matched {self.matched_question_count}/{len(self.questions)} questions to columns")
-        self._render_question_table()
-        self._refresh_submit_button()
-
-    def _render_question_table(self) -> None:
-        table = self.query_one("#question_table", DataTable)
-        table.clear(columns=False)
-        table.columns.clear()
-        table.add_columns("Question", "Entry ID", "Type", "CSV Column")
-        for question in self.questions:
-            table.add_row(question["title"], str(question["entry"]), question["type_name"], question.get("col") or "")
-
-    @on(Button.Pressed, "#fetch_form")
-    def handle_fetch_form(self) -> None:
+    def advance_from_form(self) -> None:
         form_url = self.query_one("#form_url", Input).value.strip()
         if not form_url:
-            self._update_status("Paste a Google Form URL first.")
+            self._show_error("form_error", "Enter a Google Form URL.")
             return
+        if not is_valid_form_url(form_url):
+            self._show_error("form_error", "Use a forms.gle link or a docs.google.com/forms/d/e/.../viewform URL.")
+            return
+
         self.form_url = form_url
-        self._fetch_and_analyze(form_url)
+        self.questions = []
+        self.query_one("#form_error", Static).update("")
+        table = self.query_one("#question_table", DataTable)
+        table.clear(columns=True)
+        self.query_one("#questions_next", Button).disabled = True
+        self.query_one("#question_error", Static).update("")
+        self.query_one("#fetch_status", Static).update("Fetching the form...")
+        self._show_stage("step_questions")
+        self._fetch_questions(form_url)
 
-    @work(thread=True)
-    def _fetch_and_analyze(self, form_url: str) -> None:
+    @work(thread=True, exclusive=True)
+    def _fetch_questions(self, form_url: str) -> None:
         try:
-            self.call_from_thread(self._render_questions, parse_form_schema(fetch_form_html(form_url)))
-        except Exception as exc:  # pragma: no cover
-            self.call_from_thread(self.log_event, f"Fetch failed: {exc}")
-            self.call_from_thread(self._update_status, "Fetch failed.")
+            questions = parse_form_schema(fetch_form_html(form_url))
+            if not questions:
+                raise ValueError("No questions were found. The form may be private, require sign-in, or use an unsupported layout.")
+            self.call_from_thread(self._questions_loaded, questions)
+        except Exception as exc:
+            self.call_from_thread(self._fetch_failed, str(exc))
 
-    def _render_questions(self, questions: List[Dict[str, Any]]) -> None:
+    def _questions_loaded(self, questions: List[Dict[str, Any]]) -> None:
         self.questions = questions
-        self.matched_question_count = 0
-        self._render_question_table()
-        self._refresh_submit_button()
-        self._update_status(f"{len(questions)} questions detected")
-        self.log_event(f"{len(questions)} questions detected")
+        table = self.query_one("#question_table", DataTable)
+        table.add_columns("#", "Question", "Entry ID", "Type", "Required")
+        for number, question in enumerate(questions, start=1):
+            table.add_row(
+                str(number),
+                str(question["title"]),
+                f"entry.{question['entry']}",
+                str(question["type_name"]),
+                "yes" if question.get("required") else "",
+            )
+        self.query_one("#fetch_status", Static).update(f"Found {len(questions)} questions.")
+        self.query_one("#questions_next", Button).disabled = False
 
-    @on(RadioSet.Changed, "#mode_selector")
-    def handle_mode_change(self, event: RadioSet.Changed) -> None:
-        self.llm_mode_active = bool(event.pressed and event.pressed.id == "mode_llm")
-        self._llm_controls_visible(self.llm_mode_active)
-        self._refresh_submit_button()
+    def _fetch_failed(self, message: str) -> None:
+        self._show_error("question_error", f"Could not scan this form: {message}")
+        self.query_one("#fetch_status", Static).update("Scan failed. Go back and check the URL or form access.")
+        self.query_one("#questions_next", Button).disabled = True
 
-    @on(Checkbox.Changed, "#demo_submit_confirmation")
-    def handle_demo_confirmation(self, event: Checkbox.Changed) -> None:
-        self._refresh_submit_button()
+    @on(Button.Pressed, "#questions_back")
+    def back_to_form(self) -> None:
+        self._show_stage("step_form")
+        self.query_one("#form_url", Input).focus()
 
-    @on(Button.Pressed, "#generate_rows")
-    def handle_generate_rows(self) -> None:
-        if not self.questions:
-            self.log_event("No form schema available for synthetic row generation.")
+    @on(Button.Pressed, "#questions_next")
+    def advance_to_csv(self) -> None:
+        self._show_stage("step_csv")
+        self.query_one("#csv_path", Input).focus()
+
+    @on(Input.Submitted, "#csv_path")
+    def csv_path_submitted(self) -> None:
+        self.load_csv()
+
+    @on(Button.Pressed, "#csv_load")
+    def csv_load_pressed(self) -> None:
+        self.load_csv()
+
+    def load_csv(self) -> None:
+        requested_path = self.query_one("#csv_path", Input).value.strip() or "responses.csv"
+        path = Path(requested_path).expanduser()
+        if not path.exists():
+            try:
+                self.csv_path = create_template_csv(path, self.questions)
+            except Exception as exc:
+                self._show_error("csv_message", f"Could not create the template: {exc}")
+                return
+            self.query_one("#csv_path", Input).display = False
+            self.query_one("#csv_load", Button).display = False
+            self.query_one("#csv_back", Button).display = False
+            self.query_one("#template_exit", Button).display = True
+            self.query_one("#confirm_missing", Button).display = False
+            self._show_error("csv_message", f"Template created: {self.csv_path}\nFill this in, then restart the app.")
             return
+
         try:
-            rows = max(1, int(self.query_one("#llm_rows", Input).value.strip() or "5"))
+            rows, missing, extra = read_response_csv(path, self.questions)
+        except Exception as exc:
+            self._show_error("csv_message", f"Could not load CSV: {exc}")
+            return
+        if not rows:
+            self._show_error("csv_message", "The CSV has no non-blank response rows.")
+            return
+
+        self.csv_path = str(path.resolve())
+        self.csv_rows = rows
+        self.missing_headers = missing
+        if missing:
+            message = "Missing form question columns:\n" + "\n".join(f"- {title}" for title in missing)
+            message += "\nContinue with those answers left blank?"
+            if extra:
+                message += "\nExtra columns will be ignored: " + ", ".join(extra)
+            self._show_error("csv_message", message)
+            self.query_one("#confirm_missing", Button).display = True
+            self.query_one("#csv_load", Button).display = False
+            return
+
+        self._prepare_confirmation(extra)
+
+    @on(Button.Pressed, "#confirm_missing")
+    def accept_missing_headers(self) -> None:
+        self._prepare_confirmation([])
+
+    def _prepare_confirmation(self, extra: Sequence[str]) -> None:
+        self.query_one("#confirm_missing", Button).display = False
+        self.query_one("#csv_load", Button).display = True
+        summary = (
+            f"Form URL: {self.form_url}\n"
+            f"Rows: {len(self.csv_rows)}\n"
+            f"CSV path: {self.csv_path}"
+        )
+        if extra:
+            summary += "\nExtra columns ignored: " + ", ".join(extra)
+        self.query_one("#submission_summary", Static).update(summary)
+        self._update_estimate()
+        self._show_stage("step_confirm")
+
+    @on(Input.Changed, "#delay_input")
+    def update_estimate(self) -> None:
+        self._update_estimate()
+
+    def _update_estimate(self) -> None:
+        try:
+            delay = float(self.query_one("#delay_input", Input).value)
         except ValueError:
-            self.log_event("LLM row count must be an integer.")
+            self.query_one("#estimate", Static).update("Estimated total time (delay only): unavailable")
             return
-        self._generate_rows_task(rows)
+        seconds = max(0, len(self.csv_rows) - 1) * delay
+        self.query_one("#estimate", Static).update(f"Estimated total time (delay only): {seconds:.1f} seconds")
 
-    @work(thread=True)
-    def _generate_rows_task(self, row_count: int) -> None:
+    @on(Button.Pressed, "#confirm_back")
+    def back_to_csv(self) -> None:
+        self._show_stage("step_csv")
+
+    @on(Button.Pressed, "#submission_start")
+    def start_submission(self) -> None:
         try:
-            if generate_demo_csv is None:
-                raise RuntimeError("llama-cpp-python is not installed. Install it with: pip install llama-cpp-python>=0.3")
-            output_path = generate_demo_csv(self.questions, row_count, "./responses/_generated.csv")
-            self.call_from_thread(self.log_event, f"Demo CSV generated at {output_path} (demo/test data only)")
-            self.call_from_thread(self._update_status, f"Generated {row_count} demo rows")
-            self.call_from_thread(self._map_csv_to_questions, output_path)
-        except Exception as exc:  # pragma: no cover
-            self.call_from_thread(self.log_event, f"Generator failed: {exc}")
-            self.call_from_thread(self._update_status, "Demo generation failed.")
+            delay = float(self.query_one("#delay_input", Input).value)
+        except ValueError:
+            self._show_error("delay_error", "Enter a delay of at least 1.0 seconds.")
+            return
+        if delay < 1.0:
+            self._show_error("delay_error", "Delay must be at least 1.0 seconds.")
+            return
 
-    @on(Button.Pressed, "#start_submit")
-    def handle_start_submit(self) -> None:
-        if not self.questions:
-            self._update_status("No form has been parsed yet.")
-            return
-        if not self.csv_path or not os.path.exists(self.csv_path):
-            self._update_status("A CSV must be loaded before starting auto-fill.")
-            return
-        if self._is_demo_data() and not self._demo_submission_confirmed():
-            self._update_status("Confirm offline test use before submitting demo data.")
-            return
-        self._start_submit_task(self.form_url, self.csv_path)
+        self.cancel_event = threading.Event()
+        progress = self.query_one("#progress_bar", ProgressBar)
+        progress.update(total=len(self.csv_rows), progress=0)
+        self.query_one("#live_counts", Static).update("Success: 0  Failed: 0")
+        self.query_one("#current_row", Static).update("Starting...")
+        self.query_one("#submission_stop", Button).disabled = False
+        self.query_one("#submission_start", Button).disabled = True
+        self._show_stage("step_progress")
+        self._submit_rows(self.form_url, self.questions, self.csv_rows, delay, self.cancel_event)
 
-    @work(thread=True)
-    def _start_submit_task(self, form_url: str, csv_path: str) -> None:
+    @work(thread=True, exclusive=True)
+    def _submit_rows(
+        self,
+        form_url: str,
+        questions: List[Dict[str, Any]],
+        rows: List[Dict[str, str]],
+        delay: float,
+        cancel_event: threading.Event,
+    ) -> None:
         try:
-            if csv_path.endswith("_generated.csv"):
-                self.call_from_thread(self.log_event, "⚠ Submitting demo-generated data. Ensure this is a test form.")
-            result = run_submission(form_url, self.questions, csv_path, log_callback=lambda message: self.call_from_thread(self.log_event, message))
-            self.call_from_thread(self._update_status, f"Success={result['success']} Failed={result['failed']}")
-            self.call_from_thread(self.log_event, f"Success={result['success']} Failed={result['failed']}")
-        except Exception as exc:  # pragma: no cover
-            self.call_from_thread(self.log_event, f"Submit run failed: {exc}")
-            self.call_from_thread(self._update_status, "Submission failed.")
+            result = run_submission(
+                form_url,
+                questions,
+                rows,
+                delay=delay,
+                cancel_event=cancel_event,
+                progress_callback=lambda update: self.call_from_thread(self._submission_progress, update),
+            )
+            self.call_from_thread(self._submission_finished, result)
+        except Exception as exc:
+            self.call_from_thread(self._submission_crashed, str(exc))
+
+    def _submission_progress(self, update: Dict[str, Any]) -> None:
+        self.query_one("#progress_bar", ProgressBar).update(
+            total=update["total"], progress=update["completed"]
+        )
+        self.query_one("#live_counts", Static).update(
+            f"Success: {update['success']}  Failed: {update['failed']}"
+        )
+        self.query_one("#current_row", Static).update(
+            f"Row {update['row']} of {update['total']}: {update['status']}"
+        )
+
+    def _submission_finished(self, result: Dict[str, Any]) -> None:
+        self.last_result = result
+        self._render_result(result)
+
+    def _submission_crashed(self, message: str) -> None:
+        self.last_result = {"success": 0, "failed": 0, "completed": 0, "failures": []}
+        self.last_result["failures"] = [{"row": 0, "message": f"Submission stopped: {message}"}]
+        self._render_result(self.last_result)
+
+    def _render_result(self, result: Dict[str, Any]) -> None:
+        failures = result.get("failures", [])[:5]
+        failure_text = "\n".join(
+            f"Row {failure['row']}: {failure['message']}" for failure in failures
+        ) or "No failures."
+        self.query_one("#result_counts", Static).update(
+            f"Total submitted: {result.get('completed', 0)}  "
+            f"Success: {result.get('success', 0)}  Failed: {result.get('failed', 0)}"
+            + ("  (stopped)" if result.get("stopped") else "")
+        )
+        self.query_one("#failure_summary", Static).update(
+            "First failure messages:\n" + failure_text
+        )
+        self.query_one("#submission_start", Button).disabled = False
+        self._show_stage("step_result")
+
+    @on(Button.Pressed, "#submission_stop")
+    def stop_submission(self) -> None:
+        self.cancel_event.set()
+        self.query_one("#current_row", Static).update("Stopping after the current row...")
+        self.query_one("#submission_stop", Button).disabled = True
+
+    @on(Button.Pressed, "#run_again")
+    def run_again(self) -> None:
+        self.form_url = ""
+        self.questions = []
+        self.csv_path = ""
+        self.csv_rows = []
+        self.missing_headers = []
+        self.query_one("#form_url", Input).value = ""
+        self.query_one("#csv_path", Input).value = "responses.csv"
+        self.query_one("#csv_path", Input).display = True
+        self.query_one("#csv_load", Button).display = True
+        self.query_one("#csv_back", Button).display = True
+        self.query_one("#template_exit", Button).display = False
+        self.query_one("#confirm_missing", Button).display = False
+        self.query_one("#question_table", DataTable).clear(columns=True)
+        self.query_one("#questions_next", Button).disabled = True
+        self._show_stage("step_form")
+        self.query_one("#form_url", Input).focus()
+
+    @on(Button.Pressed, "#template_exit")
+    @on(Button.Pressed, "#result_exit")
+    def exit_app(self) -> None:
+        self.exit()
 
 
-def _cli_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="gform-filler")
-    parser.add_argument("--form-url", default=os.environ.get("FORM_URL"), help="Public Google Form URL")
-    parser.add_argument("--csv", default=os.environ.get("FORM_CSV", "./responses/students.csv"), help="CSV containing response rows")
-    parser.add_argument("--generate-demo", type=int, metavar="N", help="Generate N demo CSV rows via the local LLM")
-    parser.add_argument("--rows", type=int, metavar="N", help="Alias for --generate-demo")
-    parser.add_argument("--allow-demo-submit", action="store_true", help="Bypass demo-data confirmation (dangerous; test forms only)")
-    parser.add_argument("--delay", type=float, default=None, metavar="SECONDS", help="Seconds to wait between submissions (default: 1.5)")
-    parser.add_argument("--no-tui", action="store_true", help="Run without the Textual interface (plain stdout)")
-    return parser.parse_args()
-
-
-def run_cli(args: argparse.Namespace) -> None:
-    if not args.form_url:
-        raise SystemExit("A form URL is required in CLI mode. Use --form-url or set FORM_URL.")
-    demo_rows = args.generate_demo if args.generate_demo is not None else args.rows
-    if demo_rows is not None and demo_rows < 1:
-        raise SystemExit("--generate-demo/--rows must be at least 1.")
-    print("Fetching form...")
-    questions = parse_form_schema(fetch_form_html(args.form_url))
-    print(f"{len(questions)} questions detected")
-    csv_path = args.csv
-    if demo_rows is not None:
-        if not LLM_MODE_AVAILABLE or generate_demo_csv is None:
-            raise RuntimeError("llama-cpp-python is not installed. Install it with: pip install llama-cpp-python>=0.3")
-        csv_path = "./responses/_generated.csv"
-        print(f"Generating demo CSV: {csv_path}")
-        csv_path = generate_demo_csv(questions, demo_rows, csv_path)
-        print(f"Demo CSV generated at {csv_path}")
-    if not os.path.exists(csv_path):
-        raise SystemExit(f"CSV not found: {csv_path}")
-    if csv_path.endswith("_generated.csv") and not args.allow_demo_submit:
-        raise SystemExit("Refusing to submit demo-generated data. Use --allow-demo-submit only for a test form.")
-    if csv_path.endswith("_generated.csv"):
-        print("⚠ Submitting demo-generated data. Ensure this is a test form.")
-    print(f"Submitting from {csv_path}")
-    result = run_submission(args.form_url, questions, csv_path, log_callback=print, delay=args.delay)
-    print(f"Success={result['success']} Failed={result['failed']}")
+def main() -> None:
+    GFormFiller().run()
 
 
 if __name__ == "__main__":
-    args = _cli_args()
-    if args.no_tui:
-        run_cli(args)
-    else:
-        GFormFiller(allow_demo_submit=args.allow_demo_submit).run()
+    main()

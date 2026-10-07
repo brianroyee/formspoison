@@ -2,6 +2,3 @@ __pycache__/
 .venv/
 *.pyc
 .vscode/
-models/
-responses/_generated.csv
-*.gguf

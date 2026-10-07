@@ -6,8 +6,6 @@ __pycache__/
 .vscode/
 .git/
 .gitignore
-models/*.gguf
-responses/_generated.csv
 Dockerfile
 README.md
 DESIGN.md

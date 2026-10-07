@@ -45,9 +45,9 @@ RUN python -m pip install --upgrade pip && python -m pip install --no-cache-dir 
 RUN python -m playwright install chromium && python -m playwright install-deps chromium
 
 COPY . .
-RUN mkdir -p /app/models /app/responses && chmod +x /app/docker-entrypoint.sh
+RUN mkdir -p /app/responses && chmod +x /app/docker-entrypoint.sh
 
-VOLUME ["/app/models", "/app/responses"]
+VOLUME ["/app/responses"]
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
 CMD ["python", "app.py"]
